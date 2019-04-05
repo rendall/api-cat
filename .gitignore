@@ -2,3 +2,4 @@ node_modules/
 RAW/
 *.js
 .env
+yarn-error.log
