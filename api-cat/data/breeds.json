@@ -1,0 +1,875 @@
+[
+  {
+    "Name": "Abyssinian",
+    "Country": "Ethiopia",
+    "Origin": "Natural",
+    "Body Type": "Oriental|Short",
+    "Coat": "Ticked",
+    "Pattern": null,
+    "Temperament": "Jealous"
+  },
+  {
+    "Name": "Aegean",
+    "Country": "Greece",
+    "Origin": "Natural",
+    "Body Type": null,
+    "Coat": "Semi-long",
+    "Pattern": "Bicolored or tricolored",
+    "Temperament": "Even-tempered"
+  },
+  {
+    "Name": "American Curl",
+    "Country": "United States",
+    "Origin": "Mutation",
+    "Body Type": null,
+    "Coat": "Short/long",
+    "Pattern": "All",
+    "Temperament": "Relaxed"
+  },
+  {
+    "Name": "American Bobtail",
+    "Country": "United States",
+    "Origin": "Mutation",
+    "Body Type": null,
+    "Coat": "Short/long",
+    "Pattern": "All",
+    "Temperament": "Tangible"
+  },
+  {
+    "Name": "American Shorthair",
+    "Country": "United States",
+    "Origin": "Natural",
+    "Body Type": null,
+    "Coat": "Short",
+    "Pattern": "All but colorpoint",
+    "Temperament": "Quiet"
+  },
+  {
+    "Name": "American Wirehair",
+    "Country": "United States",
+    "Origin": "Mutation",
+    "Body Type": null,
+    "Coat": "Rex",
+    "Pattern": "All but colorpoint",
+    "Temperament": "Stupendous"
+  },
+  {
+    "Name": "Aphrodite Giant",
+    "Country": "Cyprus",
+    "Origin": "Natural",
+    "Body Type": "Lean and muscular",
+    "Coat": "All",
+    "Pattern": "All but cinammon and chocolate",
+    "Temperament": "Sour"
+  },
+  {
+    "Name": "Arabian Mau",
+    "Country": "Arabian Peninsula",
+    "Origin": "Natural",
+    "Body Type": null,
+    "Coat": "Short",
+    "Pattern": null,
+    "Temperament": "Faulty"
+  },
+  {
+    "Name": "Australian Mist",
+    "Country": "Australia",
+    "Origin": "Crossbreed: Abyssinian and Burmese",
+    "Body Type": "Moderate",
+    "Coat": "Short",
+    "Pattern": "Spotted or tabby",
+    "Temperament": "Wet"
+  },
+  {
+    "Name": "Asian",
+    "Country": "Developed in the United Kingdom (foundation stock from Asia)",
+    "Origin": null,
+    "Body Type": null,
+    "Coat": "Short",
+    "Pattern": "Evenly solid",
+    "Temperament": "Resonant"
+  },
+  {
+    "Name": "Asian Semi-longhair",
+    "Country": "United Kingdom",
+    "Origin": "Crossbreed: Burmese and Domestic long-haired cat",
+    "Body Type": null,
+    "Coat": "Semi-long",
+    "Pattern": "Evenly solid",
+    "Temperament": "Common"
+  },
+  {
+    "Name": "Balinese",
+    "Country": "Developed in the United States (foundation stock from Thailand)",
+    "Origin": null,
+    "Body Type": "Oriental",
+    "Coat": "Long",
+    "Pattern": "Colorpoint",
+    "Temperament": "Fumbling"
+  },
+  {
+    "Name": "Bambino",
+    "Country": "United States",
+    "Origin": "Crossbreed: Munchkin and Sphynx",
+    "Body Type": "Dwarf",
+    "Coat": "Hairless or downy",
+    "Pattern": null,
+    "Temperament": "Trite"
+  },
+  {
+    "Name": "Bengal",
+    "Country": "Developed in the United States (foundation stock from Asia)",
+    "Origin": "Hybrid: Abyssinian and Egyptian Mau",
+    "Body Type": null,
+    "Coat": "Short",
+    "Pattern": "Spotted, marbled, or rosetted",
+    "Temperament": "Wasteful"
+  },
+  {
+    "Name": "Birman",
+    "Country": "Developed in France (foundation stock from Burma, etc.)",
+    "Origin": "Crossbreed: original Birman (near extinction) with Persian and Siamese",
+    "Body Type": null,
+    "Coat": "Semi-long",
+    "Pattern": "Colorpoint",
+    "Temperament": "Regular"
+  },
+  {
+    "Name": "Bombay",
+    "Country": "Developed in the United States (some foundation stock from Burma and Thailand)",
+    "Origin": "Crossbreed: American Shorthair and Burmese",
+    "Body Type": "Moderate",
+    "Coat": "Short",
+    "Pattern": "Solid black",
+    "Temperament": "Decorous"
+  },
+  {
+    "Name": "Brazilian Shorthair",
+    "Country": "Brazil",
+    "Origin": "Natural",
+    "Body Type": null,
+    "Coat": "Short",
+    "Pattern": "All",
+    "Temperament": "Belligerant"
+  },
+  {
+    "Name": "British Longhair|British Semi-longhair",
+    "Country": "United Kingdom",
+    "Origin": null,
+    "Body Type": "Cobby",
+    "Coat": "Medium",
+    "Pattern": "All",
+    "Temperament": "Inconsistent"
+  },
+  {
+    "Name": "British Shorthair",
+    "Country": "United Kingdom",
+    "Origin": "Natural",
+    "Body Type": "Cobby",
+    "Coat": "Short",
+    "Pattern": "All",
+    "Temperament": "Solemn"
+  },
+  {
+    "Name": "British Longhair",
+    "Country": "United Kingdom",
+    "Origin": null,
+    "Body Type": "Cobby",
+    "Coat": "Long",
+    "Pattern": "All",
+    "Temperament": "Caring"
+  },
+  {
+    "Name": "Burmese",
+    "Country": "Burma",
+    "Origin": "Natural",
+    "Body Type": null,
+    "Coat": "Short",
+    "Pattern": "Solid",
+    "Temperament": "Flashy"
+  },
+  {
+    "Name": "Burmilla",
+    "Country": "United Kingdom",
+    "Origin": "Crossbreed: Burmese and Persian",
+    "Body Type": null,
+    "Coat": "Short/long",
+    "Pattern": "Solid, in Silver Shaded and Silver Tipped patterns",
+    "Temperament": "Hateful"
+  },
+  {
+    "Name": "California Spangled",
+    "Country": "United States",
+    "Origin": "Crossbreed: Abyssinian, American Shorthair and British Shorthair",
+    "Body Type": null,
+    "Coat": "Short",
+    "Pattern": "Spotted",
+    "Temperament": "Aggressive"
+  },
+  {
+    "Name": "Chantilly-Tiffany",
+    "Country": "United States",
+    "Origin": null,
+    "Body Type": null,
+    "Coat": null,
+    "Pattern": "Solid, ticked, spotted and blotched tabby",
+    "Temperament": "Artistic"
+  },
+  {
+    "Name": "Chartreux",
+    "Country": "France",
+    "Origin": "Natural",
+    "Body Type": "Cobby",
+    "Coat": "Short",
+    "Pattern": "Solid blue",
+    "Temperament": "Provincial"
+  },
+  {
+    "Name": "Chausie",
+    "Country": "France",
+    "Origin": "Hybrid: Abyssinian",
+    "Body Type": null,
+    "Coat": "Short",
+    "Pattern": "Ticked",
+    "Temperament": "Flirtatious"
+  },
+  {
+    "Name": "Cheetoh",
+    "Country": "United States",
+    "Origin": "Crossbreed/hybrid: Bengal and Ocicat",
+    "Body Type": null,
+    "Coat": "Short",
+    "Pattern": "Spotted",
+    "Temperament": "Slow"
+  },
+  {
+    "Name": "Colorpoint Shorthair",
+    "Country": null,
+    "Origin": null,
+    "Body Type": null,
+    "Coat": "Short",
+    "Pattern": "Colorpoint",
+    "Temperament": "Daffy"
+  },
+  {
+    "Name": "Cornish Rex",
+    "Country": "United Kingdom (England)",
+    "Origin": "Mutation",
+    "Body Type": null,
+    "Coat": "Rex",
+    "Pattern": "All",
+    "Temperament": "Earthy"
+  },
+  {
+    "Name": "Cymric",
+    "Country": "United Kingdom (Isle of Man), and Canada",
+    "Origin": "Mutation, from original Manx",
+    "Body Type": null,
+    "Coat": "Long",
+    "Pattern": "All but colorpoint",
+    "Temperament": "Athletic"
+  },
+  {
+    "Name": "Cyprus",
+    "Country": "Cyprus",
+    "Origin": "Natural",
+    "Body Type": "Lean and muscular",
+    "Coat": "All",
+    "Pattern": "All but colorpoint and mink|",
+    "Temperament": "Energetic"
+  },
+  {
+    "Name": "Devon Rex",
+    "Country": "United Kingdom (England)",
+    "Origin": "Mutation",
+    "Body Type": "Oriental",
+    "Coat": "Rex",
+    "Pattern": "All",
+    "Temperament": "Intellectual"
+  },
+  {
+    "Name": "Donskoy",
+    "Country": "Russia",
+    "Origin": null,
+    "Body Type": null,
+    "Coat": "Hairless",
+    "Pattern": null,
+    "Temperament": "Lively"
+  },
+  {
+    "Name": "Dragon Li",
+    "Country": "China",
+    "Origin": "Natural",
+    "Body Type": null,
+    "Coat": "Short",
+    "Pattern": "Striped tabby",
+    "Temperament": "Nasty"
+  },
+  {
+    "Name": "Dwelf",
+    "Country": null,
+    "Origin": "Crossbreed: American Curl, Munchkin and Sphinx",
+    "Body Type": "Dwarf",
+    "Coat": "Hairless",
+    "Pattern": null,
+    "Temperament": "Witty"
+  },
+  {
+    "Name": "Egyptian Mau",
+    "Country": "Egypt",
+    "Origin": "Natural",
+    "Body Type": null,
+    "Coat": "Short",
+    "Pattern": "Spotted",
+    "Temperament": "Soft-hearted"
+  },
+  {
+    "Name": "European Shorthair",
+    "Country": "Finland and Sweden",
+    "Origin": "Natural",
+    "Body Type": null,
+    "Coat": "Short",
+    "Pattern": "All but chocolate, lilac, cinnamon, fawn, amber, ticked, or colorpoint",
+    "Temperament": "Wistful"
+  },
+  {
+    "Name": "Exotic Shorthair",
+    "Country": "United States",
+    "Origin": "Crossbreed: American Shorthair and Persian",
+    "Body Type": "Cobby",
+    "Coat": "Short",
+    "Pattern": "All",
+    "Temperament": "Simple-minded"
+  },
+  {
+    "Name": "Foldex",
+    "Country": "Canada",
+    "Origin": "Crossbreed: Exotic Shorthair and Scottish Fold",
+    "Body Type": "Cobby",
+    "Coat": "Short",
+    "Pattern": "All",
+    "Temperament": "Overbearing"
+  },
+  {
+    "Name": "German Rex",
+    "Country": "East Germany",
+    "Origin": "Mutation",
+    "Body Type": null,
+    "Coat": "Rex",
+    "Pattern": "All",
+    "Temperament": "Dry"
+  },
+  {
+    "Name": "Havana Brown",
+    "Country": "United Kingdom",
+    "Origin": "Crossbreed: Siamese and black domestic short-haired cats",
+    "Body Type": null,
+    "Coat": "Short",
+    "Pattern": "Solid brown|",
+    "Temperament": "Miserly"
+  },
+  {
+    "Name": "Highlander",
+    "Country": "United States",
+    "Origin": "Crossbreed/hybrid: Desert Lynx and Jungle Curl",
+    "Body Type": "Moderate",
+    "Coat": "Short/long",
+    "Pattern": "All",
+    "Temperament": "Kind"
+  },
+  {
+    "Name": "Himalayan",
+    "Country": "United States and United Kingdom",
+    "Origin": "Crossbreed: Persian and Siamese",
+    "Body Type": "Cobby",
+    "Coat": "Long",
+    "Pattern": "Colorpoint",
+    "Temperament": "Obnoxious"
+  },
+  {
+    "Name": "Japanese Bobtail",
+    "Country": "Japan",
+    "Origin": "Natural, mutation",
+    "Body Type": "Moderate",
+    "Coat": "Short/long",
+    "Pattern": "All but colorpoint and ticked",
+    "Temperament": "Earthy"
+  },
+  {
+    "Name": "Javanese",
+    "Country": "Developed in the United States and Canada (foundation stock from Southeast Asia)",
+    "Origin": "Crossbreed: Balinese, with some Colorpoint Shorthair, Oriental Longhair and Siamese",
+    "Body Type": "Oriental",
+    "Coat": "Long",
+    "Pattern": "Colorpoint",
+    "Temperament": "Assimilationist"
+  },
+  {
+    "Name": "Karelian Bobtail",
+    "Country": "Western Russia",
+    "Origin": "Natural, mutation",
+    "Body Type": null,
+    "Coat": null,
+    "Pattern": null,
+    "Temperament": "Paltry"
+  },
+  {
+    "Name": "Khao Manee",
+    "Country": "Thailand",
+    "Origin": "Natural",
+    "Body Type": null,
+    "Coat": "Short",
+    "Pattern": "Solid white",
+    "Temperament": "Solid"
+  },
+  {
+    "Name": "Korat",
+    "Country": "Thailand",
+    "Origin": "Natural",
+    "Body Type": null,
+    "Coat": "Short",
+    "Pattern": "Solid blue",
+    "Temperament": "Fastidious"
+  },
+  {
+    "Name": "Korean Bobtail",
+    "Country": "Korea",
+    "Origin": "Natural, mutation",
+    "Body Type": null,
+    "Coat": "Short/long",
+    "Pattern": "Colorprint",
+    "Temperament": "Wheedling"
+  },
+  {
+    "Name": "Korn Ja",
+    "Country": "Thailand",
+    "Origin": "Natural",
+    "Body Type": null,
+    "Coat": "Short/hairless",
+    "Pattern": "Solid",
+    "Temperament": "Curmudgeonly"
+  },
+  {
+    "Name": "Kurilian Bobtail",
+    "Country": "Eastern Russia and Japan",
+    "Origin": "Natural, mutation",
+    "Body Type": "Semi-cobby",
+    "Coat": "Short/long",
+    "Pattern": "All but colorpoint",
+    "Temperament": "Adorable"
+  },
+  {
+    "Name": "LaPerm",
+    "Country": "United States",
+    "Origin": "Mutation",
+    "Body Type": "Moderate",
+    "Coat": "Rex",
+    "Pattern": "All",
+    "Temperament": "Ethereal"
+  },
+  {
+    "Name": "Lykoi",
+    "Country": "United States",
+    "Origin": "Mutation",
+    "Body Type": null,
+    "Coat": "Partly hairless",
+    "Pattern": "Ticked",
+    "Temperament": "Scrappy"
+  },
+  {
+    "Name": "Maine Coon",
+    "Country": "United States",
+    "Origin": "Natural",
+    "Body Type": "Large",
+    "Coat": "Long",
+    "Pattern": "All but colorpoint and ticked",
+    "Temperament": "Cagey"
+  },
+  {
+    "Name": "Manx",
+    "Country": "United Kingdom (Isle of Man)",
+    "Origin": "Natural, mutation",
+    "Body Type": null,
+    "Coat": "Short/long",
+    "Pattern": "All but colorpoint",
+    "Temperament": "Singular"
+  },
+  {
+    "Name": "Mekong Bobtail",
+    "Country": "Russia",
+    "Origin": "Mutation",
+    "Body Type": null,
+    "Coat": "Short",
+    "Pattern": "Colorpoint",
+    "Temperament": "Uneven"
+  },
+  {
+    "Name": "Minskin",
+    "Country": "United States",
+    "Origin": "Crossbreed: Munchkin and Sphynx",
+    "Body Type": "Dwarf; semi-cobby",
+    "Coat": "Short/hairless",
+    "Pattern": "All|",
+    "Temperament": "Sulky"
+  },
+  {
+    "Name": "Munchkin",
+    "Country": "United States",
+    "Origin": "Mutation",
+    "Body Type": "Dwarf",
+    "Coat": "Short/long",
+    "Pattern": "All",
+    "Temperament": "Decisive"
+  },
+  {
+    "Name": "Nebelung",
+    "Country": "United States",
+    "Origin": null,
+    "Body Type": null,
+    "Coat": "Semi-long",
+    "Pattern": "Solid blue",
+    "Temperament": "Tightfisted"
+  },
+  {
+    "Name": "Napoleon",
+    "Country": null,
+    "Origin": null,
+    "Body Type": null,
+    "Coat": "Short/long",
+    "Pattern": "Varied",
+    "Temperament": "Agreeable"
+  },
+  {
+    "Name": "Norwegian Forest cat|Norwegian Forest Cat",
+    "Country": "Norway",
+    "Origin": "Natural",
+    "Body Type": null,
+    "Coat": "Long",
+    "Pattern": "Traditional, sepia, or mink",
+    "Temperament": "Odd"
+  },
+  {
+    "Name": "Ocicat",
+    "Country": "United States",
+    "Origin": "Crossbreed: Abyssinian, American Shorthair and Siamese",
+    "Body Type": null,
+    "Coat": "Short",
+    "Pattern": "Spotted",
+    "Temperament": "Obstreperous"
+  },
+  {
+    "Name": "Ojos Azules",
+    "Country": "United States",
+    "Origin": null,
+    "Body Type": null,
+    "Coat": null,
+    "Pattern": "All",
+    "Temperament": "Introspective"
+  },
+  {
+    "Name": "Oregon Rex",
+    "Country": "United States",
+    "Origin": "Mutation",
+    "Body Type": null,
+    "Coat": "Rex",
+    "Pattern": null,
+    "Temperament": "Honest"
+  },
+  {
+    "Name": "Oriental Bicolor",
+    "Country": "Developed in the United States and United Kingdom, later in Continental Europe; foundation stock ultimately from Thailand",
+    "Origin": null,
+    "Body Type": "Oriental",
+    "Coat": null,
+    "Pattern": "Bicolor",
+    "Temperament": "Plucky"
+  },
+  {
+    "Name": "Oriental Shorthair",
+    "Country": "Developed in the United States and later the United Kingdom; foundation stock ultimately from Thailand",
+    "Origin": "Crossbreed: European Shorthair and Siamese",
+    "Body Type": "Oriental",
+    "Coat": "Short",
+    "Pattern": "All but colorpoint",
+    "Temperament": "Illustrious"
+  },
+  {
+    "Name": "Oriental Longhair",
+    "Country": "Developed in the United Kingdom and United States; foundation stock ultimately from Thailand",
+    "Origin": null,
+    "Body Type": "Oriental",
+    "Coat": "Semi-long",
+    "Pattern": "All but colorpoint",
+    "Temperament": "Meek"
+  },
+  {
+    "Name": "Persian",
+    "Country": "Greater Iran",
+    "Origin": "Natural, but some crossing with Turkish Angora",
+    "Body Type": "Cobby",
+    "Coat": "Long",
+    "Pattern": "All",
+    "Temperament": "Unassuming"
+  },
+  {
+    "Name": "Peterbald",
+    "Country": "Russia",
+    "Origin": "Crossbreed: Donskoy, Oriental Shorthair and Siamese; early: Balinese and Javanese",
+    "Body Type": "Oriental",
+    "Coat": "Hairless/flocked, velour, brush, or straight coat",
+    "Pattern": "All",
+    "Temperament": "Energetic"
+  },
+  {
+    "Name": "Pixie-bob",
+    "Country": "United States",
+    "Origin": "Mutation (falsely claimed to be a bobcat hybrid early on)",
+    "Body Type": null,
+    "Coat": "Short",
+    "Pattern": "Spotted",
+    "Temperament": "Foregoing"
+  },
+  {
+    "Name": "Raas",
+    "Country": "Indonesia",
+    "Origin": "Natural",
+    "Body Type": null,
+    "Coat": "Short",
+    "Pattern": null,
+    "Temperament": "Habitual"
+  },
+  {
+    "Name": "Ragamuffin",
+    "Country": "United States",
+    "Origin": "Crossbreed: Ragdoll with limited out-crossing to Himalayan, Persian, other Domestic long-haired cats",
+    "Body Type": "Cobby",
+    "Coat": "Long",
+    "Pattern": "All",
+    "Temperament": "Diligent"
+  },
+  {
+    "Name": "Ragdoll",
+    "Country": "United States",
+    "Origin": "Mutation (behavioral) in a crossbreed, presumed Persian or Turkish Angora and Birman or Burmese",
+    "Body Type": "Cobby",
+    "Coat": "Long",
+    "Pattern": "Colorpoint, mitted, or bicolor",
+    "Temperament": "Quickest"
+  },
+  {
+    "Name": "Russian Blue",
+    "Country": "Russia",
+    "Origin": "Natural",
+    "Body Type": null,
+    "Coat": "Short",
+    "Pattern": "Solid blue",
+    "Temperament": "Absorbed"
+  },
+  {
+    "Name": "Sam Sawet",
+    "Country": "Thailand",
+    "Origin": "Natural",
+    "Body Type": null,
+    "Coat": "Short",
+    "Pattern": "Solid",
+    "Temperament": "Clumsy"
+  },
+  {
+    "Name": "Savannah",
+    "Country": "United States",
+    "Origin": "Hybrid: Domestic cat",
+    "Body Type": "Large",
+    "Coat": "Short",
+    "Pattern": "Spotted",
+    "Temperament": "Dusty"
+  },
+  {
+    "Name": "Scottish Fold",
+    "Country": "United Kingdom (Scotland)",
+    "Origin": "Mutation",
+    "Body Type": "Cobby",
+    "Coat": "Short/long",
+    "Pattern": "All",
+    "Temperament": "Charming"
+  },
+  {
+    "Name": "Selkirk Rex",
+    "Country": "United States",
+    "Origin": "Mutation, crossbreed: American Shorthair, Persian, Himalayan, Exotic Shorthair and British Shorthair",
+    "Body Type": null,
+    "Coat": "Rex (Short/long)",
+    "Pattern": "All",
+    "Temperament": "Careful"
+  },
+  {
+    "Name": "Serengeti",
+    "Country": "United States",
+    "Origin": "Crossbreed/hybrid: Bengal and Oriental Shorthair",
+    "Body Type": null,
+    "Coat": "Short",
+    "Pattern": "Spotted",
+    "Temperament": "Adhesive"
+  },
+  {
+    "Name": "Serrade petit",
+    "Country": "France",
+    "Origin": "Natural",
+    "Body Type": null,
+    "Coat": "Short",
+    "Pattern": null,
+    "Temperament": "Heady"
+  },
+  {
+    "Name": "Siamese",
+    "Country": "Developed in the United States and Europe (foundation stock from Thailand)",
+    "Origin": "Mutation, from traditional Siamese (now known as Thai)",
+    "Body Type": "Oriental",
+    "Coat": "Short",
+    "Pattern": "Colorpoint",
+    "Temperament": "Nonstop"
+  },
+  {
+    "Name": "Siberian",
+    "Country": "Russia",
+    "Origin": "Natural",
+    "Body Type": "Semi-cobby",
+    "Coat": "Semi-long",
+    "Pattern": "All",
+    "Temperament": "Obtainable"
+  },
+  {
+    "Name": "Singapura",
+    "Country": "United States",
+    "Origin": "Crossbreed: Burmese and Abyssinian",
+    "Body Type": null,
+    "Coat": "Short",
+    "Pattern": "Ticked",
+    "Temperament": "Adventurous"
+  },
+  {
+    "Name": "Snowshoe",
+    "Country": "United States",
+    "Origin": "Crossbreed: American Shorthair and Siamese",
+    "Body Type": null,
+    "Coat": "|Short",
+    "Pattern": "Colorpoint",
+    "Temperament": "Tangible"
+  },
+  {
+    "Name": "Sokoke",
+    "Country": "Kenya",
+    "Origin": "Natural",
+    "Body Type": null,
+    "Coat": "Short",
+    "Pattern": "Tabby with ticking",
+    "Temperament": "Violent"
+  },
+  {
+    "Name": "Somali",
+    "Country": "Somalia",
+    "Origin": "Mutation",
+    "Body Type": null,
+    "Coat": "Long",
+    "Pattern": "Ticked",
+    "Temperament": "Solid"
+  },
+  {
+    "Name": "Sphynx",
+    "Country": "Canada",
+    "Origin": "Mutation",
+    "Body Type": "Oriental",
+    "Coat": "Hairless",
+    "Pattern": "All",
+    "Temperament": "Boisterous"
+  },
+  {
+    "Name": "Suphalak",
+    "Country": "Thailand",
+    "Origin": "Natural",
+    "Body Type": null,
+    "Coat": "Short",
+    "Pattern": "Solid",
+    "Temperament": "Rustic"
+  },
+  {
+    "Name": "Thai",
+    "Country": "Thailand",
+    "Origin": "Natural",
+    "Body Type": "Moderate",
+    "Coat": "Short",
+    "Pattern": "Colorpoint",
+    "Temperament": "Reflective"
+  },
+  {
+    "Name": "Thai Lilac",
+    "Country": "Thailand",
+    "Origin": "Natural",
+    "Body Type": null,
+    "Coat": "Short",
+    "Pattern": "Solid lilac",
+    "Temperament": "Responsible"
+  },
+  {
+    "Name": "Tonkinese",
+    "Country": "Canada",
+    "Origin": "Crossbreed: Burmese and Siamese",
+    "Body Type": null,
+    "Coat": "Short",
+    "Pattern": "Colorpoint, mink, or solid",
+    "Temperament": "Common"
+  },
+  {
+    "Name": "Toyger",
+    "Country": "United States",
+    "Origin": "Crossbreed/hybrid: Bengal and domestic short-haired cats",
+    "Body Type": "Moderate",
+    "Coat": "Short",
+    "Pattern": "Striped",
+    "Temperament": "Obsequious"
+  },
+  {
+    "Name": "Turkish Angora",
+    "Country": "Turkey",
+    "Origin": "Natural",
+    "Body Type": null,
+    "Coat": "Semi-long",
+    "Pattern": "All but colorpoint",
+    "Temperament": "Common"
+  },
+  {
+    "Name": "Turkish Van",
+    "Country": "Developed in the United Kingdom (foundation stock from Turkey)",
+    "Origin": "Natural",
+    "Body Type": null,
+    "Coat": "Semi-long",
+    "Pattern": "Van pattern",
+    "Temperament": "Fantastic"
+  },
+  {
+    "Name": "Ukrainian Levkoy",
+    "Country": "Ukraine",
+    "Origin": null,
+    "Body Type": null,
+    "Coat": "Hairless",
+    "Pattern": null,
+    "Temperament": "Tawdry"
+  },
+  {
+    "Name": "Wila Krungthep",
+    "Country": "Thailand",
+    "Origin": "Natural",
+    "Body Type": null,
+    "Coat": "Short",
+    "Pattern": "Solid",
+    "Temperament": "Basic"
+  },
+  {
+    "Name": "York Chocolate",
+    "Country": "United States (New York)",
+    "Origin": "Natural",
+    "Body Type": null,
+    "Coat": "Long",
+    "Pattern": "Solid brown",
+    "Temperament": "Common"
+  }
+]
