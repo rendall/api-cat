@@ -12,6 +12,7 @@
     "@types/node": "^11.13.0",
     "dotenv": "^7.0.0",
     "jest": "^24.7.1",
+    "netlify-lambda": "^1.4.3",
     "typescript": "^3.4.1"
   },
   "scripts": {
