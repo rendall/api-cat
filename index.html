@@ -5,6 +5,25 @@
   <title>Cat API</title>
 </head>
 
-<body><a href="./.netlify/functions/breed">breed</a></body>
+<body>
+  <h1>Cat API</h1>
+  <p>There is one endpoint <code>/breed</code> that can be accessed in three ways:</p>
+  <ul>
+    <li><a href="./.netlify/functions/breed">./.netlify/functions/breed</a> returns an array of <code>{id, name}</code> objects representing all breed names and their corresponding ids in the database</li>
+    <li><a href="./.netlify/functions/breed/42">./.netlify/functions/breed/42</a> returns a breed matching <code>id</code> or <code>null</code> if not found</li>
+    <li><a href="./.netlify/functions/breed?search=bobtail">./.netlify/functions/breed?search=bobtail</a> returns an array of breeds or an empty array if not found</li>
+  </ul>
+  <p>An object representing an example breed</p>
+  <code>
+    {
+      name: "Aegean",
+      country: "Greece",
+      origin: "Natural",
+      coat: "Semi-long",
+      pattern: "Bicolored or tricolored",
+      temperament: "Even-tempered"
+    }
+  </code>
+</body>
 
 </html>
