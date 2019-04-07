@@ -3,3 +3,4 @@ RAW/
 *.js
 .env
 yarn-error.log
+.git
