@@ -24,7 +24,7 @@ If all went well, the API is ready for deployment.
 ## assumptions
 
 - `git` is installed
-- `node` is installed
+- `node` is installed (version in `./.nvmrc` file: `v11.9.0`)
 - `yarn` is installed (optional), otherwise `npm` is fine
 - a `.env` file exists, following `.env.example`
 - a [MongoDB Atlas cluster](https://docs.atlas.mongodb.com/create-new-cluster/) is provisioned
