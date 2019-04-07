@@ -7,14 +7,14 @@ import * as fs from 'fs'
 const assertions = () => {
   assert.ok(process.env.DB_ADMIN_CONNECTION, 'DB_ADMIN_CONNECTION is undefined. Please check the .env file')
   assert.ok(process.env.DB_NAME, 'DB_NAME is undefined. Please check the .env file')
-  assert.ok(process.env.API_COLLECTION, 'API_COLLECTION is undefined. Please check the .env file')
+  assert.ok(process.env.COLLECTON_NAME, 'COLLECTON_NAME is undefined. Please check the .env file')
 }
 
 
 const insert = () => {
   const client:MongoClient = new MongoClient(process.env.DB_ADMIN_CONNECTION!, { useNewUrlParser: true })
   const dbName = process.env.DB_NAME
-  const collectionName = process.env.API_COLLECTION!
+  const collectionName = process.env.COLLECTON_NAME!
   const fileData:string = fs.readFileSync("./data/breeds.json", 'utf8')
   const data = JSON.parse(fileData) 
 
