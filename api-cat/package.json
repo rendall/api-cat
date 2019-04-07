@@ -28,6 +28,7 @@
     "test": "jest",
     "insert": "node ./data/insert.js",
     "build": "tsc && netlify-lambda build functions-src",
+    "build:ci": "tsc && netlify-lambda build functions-src",
     "serve": "netlify-lambda serve ./functions-src"
   },
   "dependencies": {
