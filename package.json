@@ -27,8 +27,8 @@
   "scripts": {
     "test": "jest",
     "insert": "node ./data/insert.js",
-    "build": "tsc && netlify-lambda build functions-src",
-    "build:ci": "tsc && netlify-lambda build functions-src",
+    "build": "tsc && netlify-lambda build functions-src --config ./webpack.functions.js",
+    "build:ci": "tsc && netlify-lambda build functions-src --config ./webpack.functions.js",
     "serve": "netlify-lambda serve ./functions-src",
     "deploy": "git push . master:deploy && git push origin deploy:deploy"
   },
