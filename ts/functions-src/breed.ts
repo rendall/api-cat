@@ -45,7 +45,9 @@ if ([connectionString, dbName, collectionName].some( envVar => !envVar)) callbac
 
     client.close()
     return result
-  }).then((result) => callback(null, {statusCode:200, body:JSON.stringify({ message:"troubleshoot", result })})).catch(reason => callback(reason))
+  })
+
+  callback(null, {statusCode:200, body:JSON.stringify({ message:"troubleshoot"})})
 }
 
 // const getClient = ():Promise<{client:MongoClient, db:Db, collection:Collection<Breed>}> => new Promise((resolve, reject) => {
