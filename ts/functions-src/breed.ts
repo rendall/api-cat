@@ -1,6 +1,8 @@
 import { Context, Handler, Callback } from 'aws-lambda'
 import { MongoClient, ObjectId, Db, Collection } from 'mongodb';
 import { config as dotenvConfig } from 'dotenv'
+// troubleshoot
+import {find, findOne, search} from './db/breeds'
 
 // Add .env variables to code:
 dotenvConfig()
@@ -53,24 +55,21 @@ const getClient = ():Promise<{client:MongoClient, db:Db, collection:Collection<B
 
 
 export const searchBreed = async (term: string) => {
-  const {client, collection} = await getClient()
-  const result = collection.find({ '$text': { '$search': term } }).toArray()
-  client.close()
+  const result = await search(term);// collection.find({ '$text': { '$search': term } }).toArray()
   return result
 }
 
 export const getAllBreeds = async () => {
-  const {client, collection} = await getClient()
-  const result = collection.find().project({ 'name': 1, 'country': 1 }).toArray()
-  client.close()
+  const result = await find();//collection.find().project({ 'name': 1, 'country': 1 }).toArray()
   return result
 }
 
 export const getBreed = async (id: string) => {
-  const {client, collection} = await getClient()
-  const objId = new ObjectId(id)
-  const result = collection.find({ _id: objId }).next()
-  client.close()
+  //const {client, collection} = await getClient()
+  //const objId = new ObjectId(id)
+  //const result = collection.find({ _id: objId }).next()
+  //client.close()
+  const result = await findOne(id)
   return result  
 }
 
