@@ -26,6 +26,7 @@ const insert = () => {
       assert.strictEqual(results.insertedCount, data.length, `data results count ${results.insertedCount} does not match data insertion length ${data.length}`) 
       console.log(`inserted ${results.insertedCount} items into ${dbName}.${collectionName}`)
     })
+    .then(() => client.db(dbName).collection(collectionName).createIndex({ name: "text" })) // create searchable index on breed name
     .catch(err => console.error(err))
     .finally(() => client.close())
 }
