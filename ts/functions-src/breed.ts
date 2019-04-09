@@ -1,20 +1,20 @@
 import { Context, Handler, Callback } from 'aws-lambda'
 //import { MongoClient, ObjectId, Db, Collection } from 'mongodb';
-//import { config as dotenvConfig } from 'dotenv'
+import { config as dotenvConfig } from 'dotenv'
 
 // Add .env variables to code:
-// dotenvConfig()
-// const connectionString = process.env.DB_READER_CONNECTION!
-// const dbName = process.env.DB_NAME!
-// const collectionName = process.env.COLLECTON_NAME!
+ dotenvConfig()
+ const connectionString = process.env.DB_READER_CONNECTION!
+ const dbName = process.env.DB_NAME!
+ const collectionName = process.env.COLLECTON_NAME!
 
-// // Make sure that .env variables are defined
-// if ([connectionString, dbName, collectionName].some( envVar => !envVar)) throw new Error("environment variables not declared. Check that .env exists")
+// Make sure that .env variables are defined
 
 // This is the serverless function handler
 // It identifies the kind of data expected and returns its respective
 // function call
 export const handler: Handler = (event: Event, context: Context, callback: Callback) => {
+if ([connectionString, dbName, collectionName].some( envVar => !envVar)) callback("Environment variables not declared. Check that .env exists")
 /*  context.callbackWaitsForEmptyEventLoop = false // will return data as soon as callback is called.
 
   const searchTerm = event.queryStringParameters.search
