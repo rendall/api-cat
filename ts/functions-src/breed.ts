@@ -38,15 +38,14 @@ if ([connectionString, dbName, collectionName].some( envVar => !envVar)) callbac
     else searchBreed(searchTerm!).then((results) =>  callback(null, { statusCode: 200, body: JSON.stringify(results) })).catch( err => callback( sendError(err)))
   }
   else getAllBreeds().then((result) => callback(null, { statusCode: 200, body: JSON.stringify(result) })).catch( err => callback( sendError(err)))*/
-  const client = new MongoClient(connectionString!, {useNewUrlParser:true})
-
-  client.connect().then((client) => {
+  new MongoClient(connectionString!, {useNewUrlParser:true}).connect().then((client) => {
     const db = client.db(dbName)
     const collection = db.collection(collectionName)
-    const result = collection.find({ '$text': { '$search': "bobtail" } }).toArray()
+    const result = collection.find().project({ 'name': 1, 'country': 1 }).toArray()
 
-    callback(null, {statusCode:200, body:JSON.stringify(result)})
-  }).catch(reason => callback(reason))
+    client.close()
+    return result
+  }).then((result) => callback(null, {statusCode:200, body:JSON.stringify({ message:"troubleshoot", result })})).catch(reason => callback(reason))
 }
 
 // const getClient = ():Promise<{client:MongoClient, db:Db, collection:Collection<Breed>}> => new Promise((resolve, reject) => {
