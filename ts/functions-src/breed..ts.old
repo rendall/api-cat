@@ -15,7 +15,7 @@ if ([connectionString, dbName, collectionName].some( envVar => !envVar)) throw n
 // It identifies the kind of data expected and returns its respective
 // function call
 export const handler: Handler = (event: Event, context: Context, callback: Callback) => {
-/*  context.callbackWaitsForEmptyEventLoop = false // will return data as soon as callback is called.
+  context.callbackWaitsForEmptyEventLoop = false // will return data as soon as callback is called.
 
   const searchTerm = event.queryStringParameters.search
   const id: string = normalizePath(event.path).split('/').pop()! // just takes the last directory as id, unless it is 'breed', the entry point. one potential problem of this approach is that anything will work as long as the last dir on the path is a proper id
@@ -37,8 +37,7 @@ export const handler: Handler = (event: Event, context: Context, callback: Callb
     if (!isValidSearch(searchTerm!)) callback(null, { statusCode: 400, body: `Error: '${searchTerm}' includes invalid characters` })
     else searchBreed(searchTerm!).then((results) =>  callback(null, { statusCode: 200, body: JSON.stringify(results) })).catch( err => callback( sendError(err)))
   }
-  else getAllBreeds().then((result) => callback(null, { statusCode: 200, body: JSON.stringify(result) })).catch( err => callback( sendError(err)))*/
-  callback(null, {statusCode:200, body:"troubleshoot"})
+  else getAllBreeds().then((result) => callback(null, { statusCode: 200, body: JSON.stringify(result) })).catch( err => callback( sendError(err)))
 }
 
 const getClient = ():Promise<{client:MongoClient, db:Db, collection:Collection<Breed>}> => new Promise((resolve, reject) => {
