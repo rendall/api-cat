@@ -10,7 +10,11 @@ The Cat Breed API is live here: <https://focused-elion-17290b.netlify.com/>
 
 ## install and start
 
-Type these commands in order:
+  First check the assumptions, below, then:
+
+- `git clone https://github.com/rendall/api-cat.git`
+
+  Then in the `api-cat` directory, type these commands in order:
 
 - `yarn install` or `npm install` : installs all dependencies
 - `tsc` : compiles `.ts` files into `.js`
@@ -19,7 +23,7 @@ Type these commands in order:
 - `yarn run test` : tests the API
 - `yarn run serve` : serves a local version at [localhost](http://localhost:9000/.netlify/functions/breed)
 
-If all went well, the API is ready for deployment.
+  If all went well, the API is ready for deployment.
 
 - `git push . master:deploy`
 - `git push origin deploy:deploy`
