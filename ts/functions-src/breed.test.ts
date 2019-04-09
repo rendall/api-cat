@@ -1,19 +1,24 @@
 import {getAllBreeds, getBreed, searchBreed} from './breed'
 
-const ALL_BREEDS_SUBSET = ["Siamese", "Arabian Mau", "Korat"]
-const SINGLE_BREED_OBJECT = {
-    "name": "Japanese Bobtail",
-    "country": "Japan",
-    "origin": "Natural, mutation",
-    "bodyType": "Moderate",
-    "coat": "Short/long",
-    "pattern": "All but colorpoint and ticked",
-    "temperament": "Earthy"
-  }
+// Use real data in the database
+const TEST_BREED_ID = "5cac7770d8d14b2450f6753f"
+const TEST_SEARCH_TERM = "bobtail"
+const TEST_SEARCH_RESULT_LENGTH = 6
+const TEST_SEARCH_RESULT_INCLUDE = { "name": "Japanese Bobtail" }
+
+const toJson = (x:any) => JSON.stringify(x)
 
 describe("cat api breed endpoint tests", () => {
-  test("smoke test", () => { expect(true).toBe(true); });
-  test("get all breeds", () => expect(getAllBreeds()).resolves.toEqual(expect.arrayContaining(ALL_BREEDS_SUBSET)))
-  test("get single breed", () => expect(getBreed("1")).resolves.toEqual(expect.objectContaining(SINGLE_BREED_OBJECT)))
-  test("search term", () => expect(searchBreed("Angora")).resolves.toHaveLength(3))
+  test("smoke test", () => expect(true).toBe(true) );
+  test("getAllBreeds should be array of length 96", (done) => { expect(getAllBreeds()).resolves.toHaveLength(96); done() } )
+  test(`getAllBreeds should have a ${toJson( TEST_SEARCH_RESULT_INCLUDE )}`, (done) => { expect(getAllBreeds()).resolves.toEqual(
+    expect.arrayContaining([expect.objectContaining(TEST_SEARCH_RESULT_INCLUDE)])
+  ); done() })
+  test(`getBreed(${TEST_BREED_ID}) should be ${toJson( TEST_SEARCH_RESULT_INCLUDE.name )}'`, (done) => { expect(getBreed(TEST_BREED_ID)).resolves.toEqual(expect.objectContaining( TEST_SEARCH_RESULT_INCLUDE )); done() })
+  test("getBreed called with a malformed ID should reject", (done) => { expect(getBreed("bad")).rejects; done() })
+  test(`searchBreed("${TEST_SEARCH_TERM}") should return array of length ${TEST_SEARCH_RESULT_LENGTH}`, (done) => { expect(searchBreed(TEST_SEARCH_TERM)).resolves.toHaveLength(6); done() })
+  test(`searchBreed("bortail") should return array of length 0`, (done) => { expect(searchBreed("bortail")).resolves.toHaveLength(0); done() })
+  test(`searchBreed("${TEST_SEARCH_TERM}") should include ${toJson( TEST_SEARCH_RESULT_INCLUDE )}`, (done) => { expect(searchBreed(TEST_SEARCH_TERM)).resolves.toEqual(
+    expect.arrayContaining([expect.objectContaining(TEST_SEARCH_RESULT_INCLUDE)])
+  ); done() })
 })
