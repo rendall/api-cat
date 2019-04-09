@@ -3,19 +3,19 @@ import { MongoClient, ObjectId, Db, Collection } from 'mongodb';
 import { config as dotenvConfig } from 'dotenv'
 
 // Add .env variables to code:
- dotenvConfig()
- const connectionString = process.env.DB_READER_CONNECTION!
- const dbName = process.env.DB_NAME!
- const collectionName = process.env.COLLECTON_NAME!
+dotenvConfig()
+const connectionString = process.env.DB_READER_CONNECTION!
+const dbName = process.env.DB_NAME!
+const collectionName = process.env.COLLECTON_NAME!
 
 // Make sure that .env variables are defined
+if ([connectionString, dbName, collectionName].some( envVar => !envVar)) throw new Error("environment variables not declared. Check that .env exists")
 
 // This is the serverless function handler
 // It identifies the kind of data expected and returns its respective
 // function call
 export const handler: Handler = (event: Event, context: Context, callback: Callback) => {
-if ([connectionString, dbName, collectionName].some( envVar => !envVar)) callback("One or more necessary environment variables are not set. Check that .env exists")
-/*  context.callbackWaitsForEmptyEventLoop = false // will return data as soon as callback is called.
+  context.callbackWaitsForEmptyEventLoop = false // will return data as soon as callback is called.
 
   const searchTerm = event.queryStringParameters.search
   const id: string = normalizePath(event.path).split('/').pop()! // just takes the last directory as id, unless it is 'breed', the entry point. one potential problem of this approach is that anything will work as long as the last dir on the path is a proper id
@@ -37,75 +37,65 @@ if ([connectionString, dbName, collectionName].some( envVar => !envVar)) callbac
     if (!isValidSearch(searchTerm!)) callback(null, { statusCode: 400, body: `Error: '${searchTerm}' includes invalid characters` })
     else searchBreed(searchTerm!).then((results) =>  callback(null, { statusCode: 200, body: JSON.stringify(results) })).catch( err => callback( sendError(err)))
   }
-  else getAllBreeds().then((result) => callback(null, { statusCode: 200, body: JSON.stringify(result) })).catch( err => callback( sendError(err)))*/
-  new MongoClient(connectionString!, {useNewUrlParser:true}).connect().then((client) => {
-    const db = client.db(dbName)
-    const collection = db.collection(collectionName)
-    const result = collection.find().project({ 'name': 1, 'country': 1 }).toArray()
-
-    client.close()
-    return result
-  })
-
-  callback(null, {statusCode:200, body:JSON.stringify({ message:"troubleshoot"})})
+  else getAllBreeds().then((result) => callback(null, { statusCode: 200, body: JSON.stringify(result) })).catch( err => callback( sendError(err)))
 }
 
-// const getClient = ():Promise<{client:MongoClient, db:Db, collection:Collection<Breed>}> => new Promise((resolve, reject) => {
-//   const client = new MongoClient(connectionString!, {useNewUrlParser:true})
+const getClient = ():Promise<{client:MongoClient, db:Db, collection:Collection<Breed>}> => new Promise((resolve, reject) => {
+  const client = new MongoClient(connectionString!, {useNewUrlParser:true})
 
-//   client.connect().then((client) => {
-//     const db = client.db(dbName)
-//     const collection = db.collection(collectionName)
+  client.connect().then((client) => {
+    const db = client.db(dbName)
+    const collection = db.collection(collectionName)
 
-//     resolve({client, db, collection})
-//   }).catch(reason => reject(reason))
-// })
-
-
-// export const searchBreed = async (term: string) => {
-//   const {client, collection} = await getClient()
-//   const result = collection.find({ '$text': { '$search': term } }).toArray()
-//   client.close()
-//   return result
-// }
-
-// export const getAllBreeds = async () => {
-//   const {client, collection} = await getClient()
-//   const result = collection.find().project({ 'name': 1, 'country': 1 }).toArray()
-//   client.close()
-//   return result
-// }
-
-// export const getBreed = async (id: string) => {
-//   const {client, collection} = await getClient()
-//   const objId = new ObjectId(id)
-//   const result = collection.find({ _id: objId }).next()
-//   client.close()
-//   return result  
-// }
+    resolve({client, db, collection})
+  }).catch(reason => reject(reason))
+})
 
 
+export const searchBreed = async (term: string) => {
+  const {client, collection} = await getClient()
+  const result = collection.find({ '$text': { '$search': term } }).toArray()
+  client.close()
+  return result
+}
 
-// // This just removes any trailing '/' delimiters
-// const normalizePath = (path: string) => path.slice(-1) === '/' ? path.slice(0, path.length - 1) : path
+export const getAllBreeds = async () => {
+  const {client, collection} = await getClient()
+  const result = collection.find().project({ 'name': 1, 'country': 1 }).toArray()
+  client.close()
+  return result
+}
 
-// // format the error message
-// const sendError = (err: Error) => {
-//   const { name, message } = err
-//   // only return 'stack' if in development mode
-//   if (process.env.NODE_ENV === "development") return JSON.stringify(err)
-//   else return JSON.stringify({ error:name, message })
-// }
+export const getBreed = async (id: string) => {
+  const {client, collection} = await getClient()
+  const objId = new ObjectId(id)
+  const result = collection.find({ _id: objId }).next()
+  client.close()
+  return result  
+}
 
-// interface Breed {
-//   name: string,
-//   country?: string,
-//   origin?: string,
-//   bodyType?: string,
-//   coat?: string,
-//   pattern?: string,
-//   temperament: string,
-// }
+
+
+// This just removes any trailing '/' delimiters
+const normalizePath = (path: string) => path.slice(-1) === '/' ? path.slice(0, path.length - 1) : path
+
+// format the error message
+const sendError = (err: Error) => {
+  const { name, message } = err
+  // only return 'stack' if in development mode
+  if (process.env.NODE_ENV === "development") return JSON.stringify(err)
+  else return JSON.stringify({ error:name, message })
+}
+
+interface Breed {
+  name: string,
+  country?: string,
+  origin?: string,
+  bodyType?: string,
+  coat?: string,
+  pattern?: string,
+  temperament: string,
+}
 
 interface Event {
   path: string;
@@ -130,16 +120,16 @@ interface Headers {
 }
 
 
-// /*[
-//   {
-//     '$project': {
-//       'name': 1,
-//       'country': 1,
-//       'origin': 1,
-//       'bodyType': 1,
-//       'coat': 1,
-//       'pattern': 1,
-//       'temperament': 1
-//     }
-//   }
-// ]*/
+/*[
+  {
+    '$project': {
+      'name': 1,
+      'country': 1,
+      'origin': 1,
+      'bodyType': 1,
+      'coat': 1,
+      'pattern': 1,
+      'temperament': 1
+    }
+  }
+]*/
