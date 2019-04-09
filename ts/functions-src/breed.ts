@@ -1,5 +1,5 @@
 import { Context, Handler, Callback } from 'aws-lambda'
-//import { MongoClient, ObjectId, Db, Collection } from 'mongodb';
+import { MongoClient, ObjectId, Db, Collection } from 'mongodb';
 import { config as dotenvConfig } from 'dotenv'
 
 // Add .env variables to code:
@@ -14,7 +14,7 @@ import { config as dotenvConfig } from 'dotenv'
 // It identifies the kind of data expected and returns its respective
 // function call
 export const handler: Handler = (event: Event, context: Context, callback: Callback) => {
-if ([connectionString, dbName, collectionName].some( envVar => !envVar)) callback("Environment variables not declared. Check that .env exists")
+if ([connectionString, dbName, collectionName].some( envVar => !envVar)) callback("One or more necessary environment variables are not set. Check that .env exists")
 /*  context.callbackWaitsForEmptyEventLoop = false // will return data as soon as callback is called.
 
   const searchTerm = event.queryStringParameters.search
@@ -38,7 +38,15 @@ if ([connectionString, dbName, collectionName].some( envVar => !envVar)) callbac
     else searchBreed(searchTerm!).then((results) =>  callback(null, { statusCode: 200, body: JSON.stringify(results) })).catch( err => callback( sendError(err)))
   }
   else getAllBreeds().then((result) => callback(null, { statusCode: 200, body: JSON.stringify(result) })).catch( err => callback( sendError(err)))*/
-  callback(null, {statusCode:200, body:"troubleshoot"})
+  const client = new MongoClient(connectionString!, {useNewUrlParser:true})
+
+  client.connect().then((client) => {
+    const db = client.db(dbName)
+    const collection = db.collection(collectionName)
+    const result = collection.find({ '$text': { '$search': "bobtail" } }).toArray()
+
+    callback(null, {statusCode:200, body:JSON.stringify(result)})
+  }).catch(reason => callback(reason))
 }
 
 // const getClient = ():Promise<{client:MongoClient, db:Db, collection:Collection<Breed>}> => new Promise((resolve, reject) => {
