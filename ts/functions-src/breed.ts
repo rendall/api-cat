@@ -1,5 +1,5 @@
 import { Context, Handler, Callback } from 'aws-lambda'
-import { MongoClient, ObjectId, Db, Collection } from 'mongodb';
+//import { MongoClient, ObjectId, Db, Collection } from 'mongodb';
 import { config as dotenvConfig } from 'dotenv'
 // troubleshoot
 import {find, findOne, search} from './db/breeds'
@@ -42,15 +42,15 @@ export const handler: Handler = (event: Event, context: Context, callback: Callb
   else getAllBreeds().then((result) => callback(null, { statusCode: 200, body: JSON.stringify(result) })).catch( err => callback( sendError(err)))
 }
 
-const getClient = ():Promise<{client:MongoClient, db:Db, collection:Collection<Breed>}> => new Promise((resolve, reject) => {
-  const client = new MongoClient(connectionString!, {useNewUrlParser:true})
+const getClient = ():Promise<any> => new Promise((resolve, reject) => {
+  //const client = new MongoClient(connectionString!, {useNewUrlParser:true})
 
-  client.connect().then((client) => {
-    const db = client.db(dbName)
-    const collection = db.collection(collectionName)
+  // client.connect().then((client) => {
+  //   const db = client.db(dbName)
+  //   const collection = db.collection(collectionName)
 
-    resolve({client, db, collection})
-  }).catch(reason => reject(reason))
+  //   resolve({client, db, collection})
+  // }).catch(reason => reject(reason))
 })
 
 
