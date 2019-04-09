@@ -31,11 +31,11 @@ export const handler: Handler = (event: Event, context: Context, callback: Callb
   if (hasId) {
     // if the path has an id or an attempt at one then ignore query params
     if (!isBreedId(id)) callback(null, { statusCode: 404, body: `Error: unknown or badly-formatted id '${id}'` })
-    else getBreed(id).then((breed) => callback(null, { statusCode: 200, body: JSON.stringify(breed) })).catch( err => callback( sendError(err)))
+    else getBreed(id).then((breed) => !breed? callback(null, {statusCode:404, body:`Error: '${id}' not found`}) :callback(null, { statusCode: 200, body: JSON.stringify(breed) })).catch( err => callback( sendError(err)))
   }
   else if (hasSearchTerm) {
     if (!isValidSearch(searchTerm!)) callback(null, { statusCode: 400, body: `Error: '${searchTerm}' includes invalid characters` })
-    else searchBreed(searchTerm!).then((results) => !results? callback(null, {statusCode:404, body:`Error: '${id}' not found`}) : callback(null, { statusCode: 200, body: JSON.stringify(results) })).catch( err => callback( sendError(err)))
+    else searchBreed(searchTerm!).then((results) =>  callback(null, { statusCode: 200, body: JSON.stringify(results) })).catch( err => callback( sendError(err)))
   }
   else getAllBreeds().then((result) => callback(null, { statusCode: 200, body: JSON.stringify(result) })).catch( err => callback( sendError(err)))
 }
