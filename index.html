@@ -7,21 +7,23 @@
 
 <body>
   <h1>Cat API</h1>
+  <p>The Cat API accesses cat breeds</p>
   <p>There is one endpoint <code>/breed</code> that can be accessed in three ways:</p>
   <ul>
     <li><a href="./.netlify/functions/breed">./.netlify/functions/breed</a> returns an array of <code>{id, name}</code> objects representing all breed names and their corresponding ids in the database</li>
-    <li><a href="./.netlify/functions/breed/42">./.netlify/functions/breed/42</a> returns a breed matching <code>id</code> or <code>null</code> if not found</li>
+    <li><a href="./.netlify/functions/breed/5caccbdd012d400dfc0bee33">./.netlify/functions/breed/{ id }</a> returns a breed matching <code>id</code> or <code>null</code> if not found (e.g. <code>5caccbdd012d400dfc0bee33</code></li>
     <li><a href="./.netlify/functions/breed?search=bobtail">./.netlify/functions/breed?search=bobtail</a> returns an array of breeds or an empty array if not found</li>
   </ul>
   <p>An object representing an example breed</p>
   <code>
     {
-      name: "Aegean",
-      country: "Greece",
-      origin: "Natural",
-      coat: "Semi-long",
-      pattern: "Bicolored or tricolored",
-      temperament: "Even-tempered"
+      _id:"5caccbdd012d400dfc0bee33",
+      name:"Burmese",
+      country:"Burma",
+      origin:"Natural",
+      coat:"Short",
+      pattern:"Solid",
+      temperament:"Flashy"
     }
   </code>
 </body>

@@ -1,16 +1,19 @@
 # CAT BREED API
 
+The Cat Breed API is live here: <https://focused-elion-17290b.netlify.com/>
+
 ## endpoints
 
-- GET /breed
-- GET /breed/{id}
-- GET /breed?search={term}
+- GET [/breed](https://focused-elion-17290b.netlify.com/.netlify/functions/breed)
+- GET [/breed/{id}](https://focused-elion-17290b.netlify.com/.netlify/functions/breed/5caccbdd012d400dfc0bee33)
+- GET [/breed?search={term}](https://focused-elion-17290b.netlify.com/.netlify/functions/breed?search=longhair)
 
 ## install and start
 
 Type these commands in order:
 
 - `yarn install` or `npm install` : installs all dependencies
+- `tsc` : compiles `.ts` files into `.js`
 - `yarn run insert` : seeds a mongo Atlas cluster
 - `yarn run build`: compiles the source code
 - `yarn run test` : tests the API
