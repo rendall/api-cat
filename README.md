@@ -21,8 +21,8 @@ Type these commands in order:
 
 If all went well, the API is ready for deployment.
 
-- `git merge master deploy`
-- `git push`
+- `git push . master:deploy`
+- `git push origin deploy:deploy`
 
 ## assumptions
 
@@ -37,3 +37,4 @@ If all went well, the API is ready for deployment.
   - and their respective connection strings are in the `.env` file (see `.env.example`)
 - a [Netlify] account and site is set up
   - that deploys the `deploy` branch
+  - environment variables are in site settings
