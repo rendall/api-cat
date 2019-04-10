@@ -39,6 +39,6 @@ The Cat Breed API is live here: <https://focused-elion-17290b.netlify.com/>
     - a *reader* which has read access to the 'breeds' collection of the 'cat' database
     - and an *admin* which can create a database
   - and their respective connection strings are in the `.env` file (see `.env.example`)
-- a [Netlify] account and site is set up
+- a [Netlify](https://www.netlify.com/) account and site is set up
   - that deploys the `deploy` branch
   - environment variables are in site settings
