@@ -8,6 +8,14 @@ The Cat Breed API is live here: <https://focused-elion-17290b.netlify.com/>
 - GET [/breed/{id}](https://focused-elion-17290b.netlify.com/.netlify/functions/breed/5cad85a5f720f54848771d92)
 - GET [/breed?search={term}](https://focused-elion-17290b.netlify.com/.netlify/functions/breed?search=longhair)
 
+## development
+
+Source code is primarily in the `./ts` folder which is a mirror of the project folder. A developer would mostly only touch the files in there. The build step compiles and moves the generated `.js` files to the project folder.
+
+- `yarn run build`: compiles the source code
+- `yarn run test` : tests the API
+- `yarn run serve` : serves a local version at [localhost](http://localhost:9000/.netlify/functions/breed)
+
 ## install and start
 
   First check the assumptions, below, then:
@@ -19,9 +27,7 @@ The Cat Breed API is live here: <https://focused-elion-17290b.netlify.com/>
 - `yarn install` or `npm install` : installs all dependencies
 - `tsc` : compiles `.ts` files into `.js`
 - `yarn run insert` : seeds a mongo Atlas cluster
-- `yarn run build`: compiles the source code
-- `yarn run test` : tests the API
-- `yarn run serve` : serves a local version at [localhost](http://localhost:9000/.netlify/functions/breed)
+- `yarn run build`
 
   If all went well, the API is ready for deployment.
 
