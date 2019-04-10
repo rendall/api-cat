@@ -4,9 +4,9 @@
     "country": "Ethiopia",
     "origin": "Natural",
     "bodyType": "Oriental",
-    "coat": "Short",
-    "pattern": "Ticked",
-    "temperament": "Pleasant"
+    "coat": "Ticked",
+    "temperament": "Jealous",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Gustav_chocolate.jpg/300px-Gustav_chocolate.jpg"
   },
   {
     "name": "Aegean",
@@ -14,7 +14,8 @@
     "origin": "Natural",
     "coat": "Semi-long",
     "pattern": "Bicolored or tricolored",
-    "temperament": "Even-tempered"
+    "temperament": "Even-tempered",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Aegean_cat.jpg/300px-Aegean_cat.jpg"
   },
   {
     "name": "American Curl",
@@ -22,7 +23,8 @@
     "origin": "Mutation",
     "coat": "Short/long",
     "pattern": "All",
-    "temperament": "Relaxed"
+    "temperament": "Relaxed",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/American_curl_2.jpg/300px-American_curl_2.jpg"
   },
   {
     "name": "American Bobtail",
@@ -30,7 +32,8 @@
     "origin": "Mutation",
     "coat": "Short/long",
     "pattern": "All",
-    "temperament": "Disciplined"
+    "temperament": "Tangible",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/American_bobtail_2.jpg/300px-American_bobtail_2.jpg"
   },
   {
     "name": "American Shorthair",
@@ -38,7 +41,8 @@
     "origin": "Natural",
     "coat": "Short",
     "pattern": "All but colorpoint",
-    "temperament": "Quiet"
+    "temperament": "Quiet",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/American_Shorthair.jpg/300px-American_Shorthair.jpg"
   },
   {
     "name": "American Wirehair",
@@ -46,7 +50,8 @@
     "origin": "Mutation",
     "coat": "Rex",
     "pattern": "All but colorpoint",
-    "temperament": "Stupendous"
+    "temperament": "Stupendous",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/American_Wirehair_-_CFF_cat_show_Heinola_2008-05-04_IMG_8721.JPG/300px-American_Wirehair_-_CFF_cat_show_Heinola_2008-05-04_IMG_8721.JPG"
   },
   {
     "name": "Aphrodite Giant",
@@ -55,14 +60,16 @@
     "bodyType": "Lean and muscular",
     "coat": "All",
     "pattern": "All but cinammon and chocolate",
-    "temperament": "Sweet and sour"
+    "temperament": "Sour",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Aphrodite%27s_Giant.jpg/300px-Aphrodite%27s_Giant.jpg"
   },
   {
     "name": "Arabian Mau",
     "country": "Arabian Peninsula",
     "origin": "Natural",
     "coat": "Short",
-    "temperament": "Fantastic"
+    "temperament": "Faulty",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/3yoArabianMau.jpeg/300px-3yoArabianMau.jpeg"
   },
   {
     "name": "Australian Mist",
@@ -71,14 +78,16 @@
     "bodyType": "Moderate",
     "coat": "Short",
     "pattern": "Spotted or tabby",
-    "temperament": "Wild"
+    "temperament": "Wet",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Australian_Mist.jpg/300px-Australian_Mist.jpg"
   },
   {
     "name": "Asian",
     "country": "Developed in the United Kingdom (foundation stock from Asia)",
     "coat": "Short",
     "pattern": "Evenly solid",
-    "temperament": "Resonant"
+    "temperament": "Resonant",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/BrownVarientAsianCat.JPG/300px-BrownVarientAsianCat.JPG"
   },
   {
     "name": "Asian Semi-longhair",
@@ -86,7 +95,8 @@
     "origin": "Crossbreed: Burmese and Domestic long-haired cat",
     "coat": "Semi-long",
     "pattern": "Evenly solid",
-    "temperament": "Common"
+    "temperament": "Blushing",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Tiffanie_at_cat_show.jpg/300px-Tiffanie_at_cat_show.jpg"
   },
   {
     "name": "Balinese",
@@ -94,7 +104,8 @@
     "bodyType": "Oriental",
     "coat": "Long",
     "pattern": "Colorpoint",
-    "temperament": "Fortunate"
+    "temperament": "Fumbling",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Oskar.jpg/300px-Oskar.jpg"
   },
   {
     "name": "Bambino",
@@ -102,7 +113,8 @@
     "origin": "Crossbreed: Munchkin and Sphynx",
     "bodyType": "Dwarf",
     "coat": "Hairless or downy",
-    "temperament": "Empathic"
+    "temperament": "Trite",
+    "image": ""
   },
   {
     "name": "Bengal",
@@ -110,7 +122,8 @@
     "origin": "Hybrid: Abyssinian and Egyptian Mau",
     "coat": "Short",
     "pattern": "Spotted, marbled, or rosetted",
-    "temperament": "Wonton"
+    "temperament": "Wasteful",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/BengalCat_Stella.jpg/300px-BengalCat_Stella.jpg"
   },
   {
     "name": "Birman",
@@ -118,7 +131,8 @@
     "origin": "Crossbreed: original Birman (near extinction) with Persian and Siamese",
     "coat": "Semi-long",
     "pattern": "Colorpoint",
-    "temperament": "Regular"
+    "temperament": "Habitual",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Birman2.jpg/300px-Birman2.jpg"
   },
   {
     "name": "Bombay",
@@ -127,7 +141,8 @@
     "bodyType": "Moderate",
     "coat": "Short",
     "pattern": "Solid black",
-    "temperament": "Decorous"
+    "temperament": "Decorous",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Close_up_of_a_black_domestic_cat.jpg/300px-Close_up_of_a_black_domestic_cat.jpg"
   },
   {
     "name": "Brazilian Shorthair",
@@ -135,15 +150,17 @@
     "origin": "Natural",
     "coat": "Short",
     "pattern": "All",
-    "temperament": "Belligerant"
+    "temperament": "Belligerant",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Gato_pelo_curto_brasileiro.JPG/300px-Gato_pelo_curto_brasileiro.JPG"
   },
   {
-    "name": "British Longhair",
+    "name": "British Longhair/British Semi-longhair",
     "country": "United Kingdom",
     "bodyType": "Cobby",
     "coat": "Medium",
     "pattern": "All",
-    "temperament": "Stable"
+    "temperament": "Jumbled",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/British_Longhair_-_Black_Silver_Shaded.jpg/300px-British_Longhair_-_Black_Silver_Shaded.jpg"
   },
   {
     "name": "British Shorthair",
@@ -152,7 +169,8 @@
     "bodyType": "Cobby",
     "coat": "Short",
     "pattern": "All",
-    "temperament": "Solemn"
+    "temperament": "Solemn",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Britishblue.jpg/300px-Britishblue.jpg"
   },
   {
     "name": "British Longhair",
@@ -160,7 +178,8 @@
     "bodyType": "Cobby",
     "coat": "Long",
     "pattern": "All",
-    "temperament": "Caring"
+    "temperament": "Caring",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/British_Longhair_-_Black_Silver_Shaded.jpg/300px-British_Longhair_-_Black_Silver_Shaded.jpg"
   },
   {
     "name": "Burmese",
@@ -168,7 +187,8 @@
     "origin": "Natural",
     "coat": "Short",
     "pattern": "Solid",
-    "temperament": "Flashy"
+    "temperament": "Flashy",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Male_Chocolate_Burmese_Cat.jpg/300px-Male_Chocolate_Burmese_Cat.jpg"
   },
   {
     "name": "Burmilla",
@@ -176,7 +196,8 @@
     "origin": "Crossbreed: Burmese and Persian",
     "coat": "Short/long",
     "pattern": "Solid, in Silver Shaded and Silver Tipped patterns",
-    "temperament": "Hateful"
+    "temperament": "Hateful",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Male_Burmilla_cat.jpeg/300px-Male_Burmilla_cat.jpeg"
   },
   {
     "name": "California Spangled",
@@ -184,13 +205,15 @@
     "origin": "Crossbreed: Abyssinian, American Shorthair and British Shorthair",
     "coat": "Short",
     "pattern": "Spotted",
-    "temperament": "Aggressive"
+    "temperament": "Spiky",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Spangled_Cat.jpg/300px-Star_Spangled_Cat.jpg"
   },
   {
     "name": "Chantilly-Tiffany",
     "country": "United States",
     "pattern": "Solid, ticked, spotted and blotched tabby",
-    "temperament": "Artistic"
+    "temperament": "Immense",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Tiffany3.jpg/300px-Tiffany3.jpg"
   },
   {
     "name": "Chartreux",
@@ -199,7 +222,8 @@
     "bodyType": "Cobby",
     "coat": "Short",
     "pattern": "Solid blue",
-    "temperament": "Provincial"
+    "temperament": "Ill-Informed",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Abbaye_fev2006_003.jpg/300px-Abbaye_fev2006_003.jpg"
   },
   {
     "name": "Chausie",
@@ -207,7 +231,8 @@
     "origin": "Hybrid: Abyssinian",
     "coat": "Short",
     "pattern": "Ticked",
-    "temperament": "Flirtatious"
+    "temperament": "Handsome",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Chausiecatexample.jpg/300px-Chausiecatexample.jpg"
   },
   {
     "name": "Cheetoh",
@@ -215,21 +240,33 @@
     "origin": "Crossbreed/hybrid: Bengal and Ocicat",
     "coat": "Short",
     "pattern": "Spotted",
-    "temperament": "Slow"
+    "temperament": "Slow",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Cheetoh_cat_chilling.png/300px-Cheetoh_cat_chilling.png"
   },
   {
     "name": "Colorpoint Shorthair",
     "coat": "Short",
     "pattern": "Colorpoint",
-    "temperament": "Daffy"
+    "temperament": "Daffy",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d5/Jake117.jpg/300px-Jake117.jpg"
   },
   {
     "name": "Cornish Rex",
     "country": "United Kingdom (England)",
     "origin": "Mutation",
+    "coat": "Rex",
+    "pattern": "All",
+    "temperament": "Earthy",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/BebopsLilacPrince.JPG/300px-BebopsLilacPrince.JPG"
+  },
+  {
+    "name": "Cymric",
+    "country": "United Kingdom (Isle of Man), and Canada",
+    "origin": "Mutation, from original Manx",
     "coat": "Long",
     "pattern": "All but colorpoint",
-    "temperament": "Athletic"
+    "temperament": "Abounding",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Cymric_-_Norwegian_forest_cat_presentation_show_Kotka_2009-02-01_IMG_0687.JPG/300px-Cymric_-_Norwegian_forest_cat_presentation_show_Kotka_2009-02-01_IMG_0687.JPG"
   },
   {
     "name": "Cyprus",
@@ -238,7 +275,8 @@
     "bodyType": "Lean and muscular",
     "coat": "All",
     "pattern": "All but colorpoint and mink",
-    "temperament": "Energetic"
+    "temperament": "Bent",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/CyprusShorthair.jpg/300px-CyprusShorthair.jpg"
   },
   {
     "name": "Devon Rex",
@@ -247,13 +285,15 @@
     "bodyType": "Oriental",
     "coat": "Rex",
     "pattern": "All",
-    "temperament": "Intellectual"
+    "temperament": "Axiomatic",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Devon_Rex_Izzy.jpg/300px-Devon_Rex_Izzy.jpg"
   },
   {
     "name": "Donskoy",
     "country": "Russia",
     "coat": "Hairless",
-    "temperament": "Lively"
+    "temperament": "Lively",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Cat_don_sphinx.JPG/300px-Cat_don_sphinx.JPG"
   },
   {
     "name": "Dragon Li",
@@ -261,14 +301,16 @@
     "origin": "Natural",
     "coat": "Short",
     "pattern": "Striped tabby",
-    "temperament": "Nasty"
+    "temperament": "Nasty",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Dragon_Li_-_Li_Hua_Mau1.jpg/300px-Dragon_Li_-_Li_Hua_Mau1.jpg"
   },
   {
     "name": "Dwelf",
     "origin": "Crossbreed: American Curl, Munchkin and Sphinx",
     "bodyType": "Dwarf",
     "coat": "Hairless",
-    "temperament": "Witty"
+    "temperament": "Sharp",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Munchkin_cat.jpg/300px-Munchkin_cat.jpg"
   },
   {
     "name": "Egyptian Mau",
@@ -276,7 +318,8 @@
     "origin": "Natural",
     "coat": "Short",
     "pattern": "Spotted",
-    "temperament": "Soft-hearted"
+    "temperament": "Soft",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Egy_mau.jpg/300px-Egy_mau.jpg"
   },
   {
     "name": "European Shorthair",
@@ -284,7 +327,8 @@
     "origin": "Natural",
     "coat": "Short",
     "pattern": "All but chocolate, lilac, cinnamon, fawn, amber, ticked, or colorpoint",
-    "temperament": "Wistful"
+    "temperament": "Pointless",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/European_shorthair_procumbent_Quincy.jpg/300px-European_shorthair_procumbent_Quincy.jpg"
   },
   {
     "name": "Exotic Shorthair",
@@ -293,7 +337,8 @@
     "bodyType": "Cobby",
     "coat": "Short",
     "pattern": "All",
-    "temperament": "Simple-minded"
+    "temperament": "Simplistic",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Cream_tabby_exotic_cat.jpg/300px-Cream_tabby_exotic_cat.jpg"
   },
   {
     "name": "Foldex",
@@ -302,7 +347,8 @@
     "bodyType": "Cobby",
     "coat": "Short",
     "pattern": "All",
-    "temperament": "Overbearing"
+    "temperament": "Nine",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Cachorro_de_Gato_FoldEx_%28%22Belisario_del_Laberinto%22%29.JPG/300px-Cachorro_de_Gato_FoldEx_%28%22Belisario_del_Laberinto%22%29.JPG"
   },
   {
     "name": "German Rex",
@@ -310,7 +356,8 @@
     "origin": "Mutation",
     "coat": "Rex",
     "pattern": "All",
-    "temperament": "Dry"
+    "temperament": "Dry",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/German_Rex_Emi.jpg/300px-German_Rex_Emi.jpg"
   },
   {
     "name": "Havana Brown",
@@ -318,7 +365,8 @@
     "origin": "Crossbreed: Siamese and black domestic short-haired cats",
     "coat": "Short",
     "pattern": "Solid brown",
-    "temperament": "Miserly"
+    "temperament": "Inexpensive",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Havana_Brown.jpg/300px-Havana_Brown.jpg"
   },
   {
     "name": "Highlander",
@@ -327,7 +375,8 @@
     "bodyType": "Moderate",
     "coat": "Short/long",
     "pattern": "All",
-    "temperament": "Kind"
+    "temperament": "Next",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Highlander-7.jpg/300px-Highlander-7.jpg"
   },
   {
     "name": "Himalayan",
@@ -336,7 +385,8 @@
     "bodyType": "Cobby",
     "coat": "Long",
     "pattern": "Colorpoint",
-    "temperament": "Obnoxious"
+    "temperament": "Obnoxious",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Chocolate_Himlayan.jpg/300px-Chocolate_Himlayan.jpg"
   },
   {
     "name": "Japanese Bobtail",
@@ -345,7 +395,8 @@
     "bodyType": "Moderate",
     "coat": "Short/long",
     "pattern": "All but colorpoint and ticked",
-    "temperament": "Earthy"
+    "temperament": "Guttural",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/JapaneseBobtailBlueEyedMi-ke.JPG/300px-JapaneseBobtailBlueEyedMi-ke.JPG"
   },
   {
     "name": "Javanese",
@@ -354,13 +405,15 @@
     "bodyType": "Oriental",
     "coat": "Long",
     "pattern": "Colorpoint",
-    "temperament": "Assimilationist"
+    "temperament": "Synonymous",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Javanese_cat.jpg/300px-Javanese_cat.jpg"
   },
   {
     "name": "Karelian Bobtail",
     "country": "Western Russia",
     "origin": "Natural, mutation",
-    "temperament": "Paltry"
+    "temperament": "Paltry",
+    "image": ""
   },
   {
     "name": "Khao Manee",
@@ -368,7 +421,8 @@
     "origin": "Natural",
     "coat": "Short",
     "pattern": "Solid white",
-    "temperament": "Solid"
+    "temperament": "Gigantic",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Khao_Manee_%22ChaWee%22.jpg/300px-Khao_Manee_%22ChaWee%22.jpg"
   },
   {
     "name": "Korat",
@@ -376,7 +430,8 @@
     "origin": "Natural",
     "coat": "Short",
     "pattern": "Solid blue",
-    "temperament": "Fastidious"
+    "temperament": "Tidy",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Veda%2Cchat-adulte-m%C3%A2le-race-korat.JPG/300px-Veda%2Cchat-adulte-m%C3%A2le-race-korat.JPG"
   },
   {
     "name": "Korean Bobtail",
@@ -384,7 +439,8 @@
     "origin": "Natural, mutation",
     "coat": "Short/long",
     "pattern": "Colorprint",
-    "temperament": "Wheedling"
+    "temperament": "Scrawny",
+    "image": ""
   },
   {
     "name": "Korn Ja",
@@ -392,7 +448,8 @@
     "origin": "Natural",
     "coat": "Short/hairless",
     "pattern": "Solid",
-    "temperament": "Curmudgeonly"
+    "temperament": "Disillusioned",
+    "image": ""
   },
   {
     "name": "Kurilian Bobtail",
@@ -401,7 +458,8 @@
     "bodyType": "Semi-cobby",
     "coat": "Short/long",
     "pattern": "All but colorpoint",
-    "temperament": "Adorable"
+    "temperament": "Adorable",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Kurilian_bobtail.JPG/300px-Kurilian_bobtail.JPG"
   },
   {
     "name": "LaPerm",
@@ -410,7 +468,8 @@
     "bodyType": "Moderate",
     "coat": "Rex",
     "pattern": "All",
-    "temperament": "Ethereal"
+    "temperament": "Ethereal",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Laperm_LH_red_tabby.jpg/300px-Laperm_LH_red_tabby.jpg"
   },
   {
     "name": "Lykoi",
@@ -418,7 +477,8 @@
     "origin": "Mutation",
     "coat": "Partly hairless",
     "pattern": "Ticked",
-    "temperament": "Scrappy"
+    "temperament": "Scrappy",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/8-month-old_male_Lykoi.jpg/300px-8-month-old_male_Lykoi.jpg"
   },
   {
     "name": "Maine Coon",
@@ -427,7 +487,8 @@
     "bodyType": "Large",
     "coat": "Long",
     "pattern": "All but colorpoint and ticked",
-    "temperament": "Cagey"
+    "temperament": "Cagey",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Maine_Coon_female.jpg/300px-Maine_Coon_female.jpg"
   },
   {
     "name": "Manx",
@@ -435,7 +496,8 @@
     "origin": "Natural, mutation",
     "coat": "Short/long",
     "pattern": "All but colorpoint",
-    "temperament": "Singular"
+    "temperament": "Rare",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Japanese_Bobtail_looking_like_Manx.jpg/300px-Japanese_Bobtail_looking_like_Manx.jpg"
   },
   {
     "name": "Mekong Bobtail",
@@ -443,7 +505,8 @@
     "origin": "Mutation",
     "coat": "Short",
     "pattern": "Colorpoint",
-    "temperament": "Uneven"
+    "temperament": "Lopsided",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Mekong_bobtail_female%2C_Cofein_Pride_cattery.jpg/300px-Mekong_bobtail_female%2C_Cofein_Pride_cattery.jpg"
   },
   {
     "name": "Minskin",
@@ -452,7 +515,8 @@
     "bodyType": "Dwarf; semi-cobby",
     "coat": "Short/hairless",
     "pattern": "All",
-    "temperament": "Sulky"
+    "temperament": "Sulky",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Minskin_Kitten_Female_blue_tabby_color-pattern.jpg/300px-Minskin_Kitten_Female_blue_tabby_color-pattern.jpg"
   },
   {
     "name": "Munchkin",
@@ -461,28 +525,32 @@
     "bodyType": "Dwarf",
     "coat": "Short/long",
     "pattern": "All",
-    "temperament": "Decisive"
+    "temperament": "Decisive",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Longhairedmunchkin.jpg/300px-Longhairedmunchkin.jpg"
   },
   {
     "name": "Nebelung",
     "country": "United States",
     "coat": "Semi-long",
     "pattern": "Solid blue",
-    "temperament": "Tightfisted"
+    "temperament": "Tightfisted",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Nebelung_Male%2C_Aleksandr_van_Song_de_Chine.JPG/300px-Nebelung_Male%2C_Aleksandr_van_Song_de_Chine.JPG"
   },
   {
     "name": "Napoleon",
     "coat": "Short/long",
     "pattern": "Varied",
-    "temperament": "Agreeable"
+    "temperament": "Agreeable",
+    "image": ""
   },
   {
-    "name": "Norwegian Forest Cat",
+    "name": "Norwegian Forest cat/Norwegian Forest Cat",
     "country": "Norway",
     "origin": "Natural",
     "coat": "Long",
     "pattern": "Traditional, sepia, or mink",
-    "temperament": "Odd"
+    "temperament": "Odd",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Norskskogkatt_Evita_3.JPG/300px-Norskskogkatt_Evita_3.JPG"
   },
   {
     "name": "Ocicat",
@@ -490,27 +558,31 @@
     "origin": "Crossbreed: Abyssinian, American Shorthair and Siamese",
     "coat": "Short",
     "pattern": "Spotted",
-    "temperament": "Obstreperous"
+    "temperament": "Boiling",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Ocicat-Charan.jpg/300px-Ocicat-Charan.jpg"
   },
   {
     "name": "Ojos Azules",
     "country": "United States",
     "pattern": "All",
-    "temperament": "Introspective"
+    "temperament": "Private",
+    "image": ""
   },
   {
     "name": "Oregon Rex",
     "country": "United States",
     "origin": "Mutation",
     "coat": "Rex",
-    "temperament": "Honest"
+    "temperament": "Truthful",
+    "image": ""
   },
   {
     "name": "Oriental Bicolor",
     "country": "Developed in the United States and United Kingdom, later in Continental Europe; foundation stock ultimately from Thailand",
     "bodyType": "Oriental",
     "pattern": "Bicolor",
-    "temperament": "Plucky"
+    "temperament": "Plucky",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Oriental_shorthair_20070130_caroline.jpg/300px-Oriental_shorthair_20070130_caroline.jpg"
   },
   {
     "name": "Oriental Shorthair",
@@ -519,7 +591,8 @@
     "bodyType": "Oriental",
     "coat": "Short",
     "pattern": "All but colorpoint",
-    "temperament": "Illustrious"
+    "temperament": "Illustrious",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Oriental_Shorthair_Blue_Eyed_White_cat_%28juvenile%29.jpg/300px-Oriental_Shorthair_Blue_Eyed_White_cat_%28juvenile%29.jpg"
   },
   {
     "name": "Oriental Longhair",
@@ -527,7 +600,8 @@
     "bodyType": "Oriental",
     "coat": "Semi-long",
     "pattern": "All but colorpoint",
-    "temperament": "Meek"
+    "temperament": "Embarrassed",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/OLH-GIP_Divan_Cesar.jpg/300px-OLH-GIP_Divan_Cesar.jpg"
   },
   {
     "name": "Persian",
@@ -536,7 +610,8 @@
     "bodyType": "Cobby",
     "coat": "Long",
     "pattern": "All",
-    "temperament": "Unassuming"
+    "temperament": "Petite",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Persialainen.jpg/300px-Persialainen.jpg"
   },
   {
     "name": "Peterbald",
@@ -545,7 +620,8 @@
     "bodyType": "Oriental",
     "coat": "Hairless/flocked, velour, brush, or straight coat",
     "pattern": "All",
-    "temperament": "Energetic"
+    "temperament": "Bustling",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Tamila_the_lilac_tabby_Peterbald_cat.jpg/300px-Tamila_the_lilac_tabby_Peterbald_cat.jpg"
   },
   {
     "name": "Pixie-bob",
@@ -553,23 +629,26 @@
     "origin": "Mutation (falsely claimed to be a bobcat hybrid early on)",
     "coat": "Short",
     "pattern": "Spotted",
-    "temperament": "Foregoing"
+    "temperament": "Foregoing",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Jarnac_Bepacific_feb07.jpg/300px-Jarnac_Bepacific_feb07.jpg"
   },
   {
     "name": "Raas",
     "country": "Indonesia",
     "origin": "Natural",
     "coat": "Short",
-    "temperament": "Habitual"
+    "temperament": "Habitual",
+    "image": ""
   },
   {
     "name": "Ragamuffin",
     "country": "United States",
-    "origin": "Crossbreed: Ragdoll with limited out-crossing to Himalayan, Persian, other Domestic long-haired cats",
+    "origin": "Crossbreed: Ragdoll with limited out-crossing to Himalayan, Persian, other domestic long-haired cats",
     "bodyType": "Cobby",
     "coat": "Long",
     "pattern": "All",
-    "temperament": "Diligent"
+    "temperament": "Diligent",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/20050922AmarilloRes.jpg/300px-20050922AmarilloRes.jpg"
   },
   {
     "name": "Ragdoll",
@@ -578,7 +657,8 @@
     "bodyType": "Cobby",
     "coat": "Long",
     "pattern": "Colorpoint, mitted, or bicolor",
-    "temperament": "Quickest"
+    "temperament": "Quickest",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Ragdoll_from_Gatil_Ragbelas.jpg/300px-Ragdoll_from_Gatil_Ragbelas.jpg"
   },
   {
     "name": "Russian Blue",
@@ -586,7 +666,8 @@
     "origin": "Natural",
     "coat": "Short",
     "pattern": "Solid blue",
-    "temperament": "Absorbed"
+    "temperament": "Absorbed",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Russian_Blue_001.gif/300px-Russian_Blue_001.gif"
   },
   {
     "name": "Sam Sawet",
@@ -594,7 +675,8 @@
     "origin": "Natural",
     "coat": "Short",
     "pattern": "Solid",
-    "temperament": "Clumsy"
+    "temperament": "Clumsy",
+    "image": ""
   },
   {
     "name": "Savannah",
@@ -603,7 +685,8 @@
     "bodyType": "Large",
     "coat": "Short",
     "pattern": "Spotted",
-    "temperament": "Dusty"
+    "temperament": "Dusty",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Savannah_Cat_portrait.jpg/300px-Savannah_Cat_portrait.jpg"
   },
   {
     "name": "Scottish Fold",
@@ -612,7 +695,8 @@
     "bodyType": "Cobby",
     "coat": "Short/long",
     "pattern": "All",
-    "temperament": "Charming"
+    "temperament": "Charming",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Lilac_Scottish_Fold.jpg/300px-Lilac_Scottish_Fold.jpg"
   },
   {
     "name": "Selkirk Rex",
@@ -620,7 +704,8 @@
     "origin": "Mutation, crossbreed: American Shorthair, Persian, Himalayan, Exotic Shorthair and British Shorthair",
     "coat": "Rex (Short/long)",
     "pattern": "All",
-    "temperament": "Careful"
+    "temperament": "Careful",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/PolloSelkirkRex.jpg/300px-PolloSelkirkRex.jpg"
   },
   {
     "name": "Serengeti",
@@ -628,14 +713,16 @@
     "origin": "Crossbreed/hybrid: Bengal and Oriental Shorthair",
     "coat": "Short",
     "pattern": "Spotted",
-    "temperament": "Adhesive"
+    "temperament": "Adhesive",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Serengetimalecat.jpg/300px-Serengetimalecat.jpg"
   },
   {
     "name": "Serrade petit",
     "country": "France",
     "origin": "Natural",
     "coat": "Short",
-    "temperament": "Heady"
+    "temperament": "Heady",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Serrade_petit.jpg/300px-Serrade_petit.jpg"
   },
   {
     "name": "Siamese",
@@ -644,7 +731,8 @@
     "bodyType": "Oriental",
     "coat": "Short",
     "pattern": "Colorpoint",
-    "temperament": "Nonstop"
+    "temperament": "Nonstop",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Siam_lilacpoint.jpg/300px-Siam_lilacpoint.jpg"
   },
   {
     "name": "Siberian",
@@ -653,7 +741,8 @@
     "bodyType": "Semi-cobby",
     "coat": "Semi-long",
     "pattern": "All",
-    "temperament": "Obtainable"
+    "temperament": "Obtainable",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Siberiancat.jpg/300px-Siberiancat.jpg"
   },
   {
     "name": "Singapura",
@@ -661,7 +750,8 @@
     "origin": "Crossbreed: Burmese and Abyssinian",
     "coat": "Short",
     "pattern": "Ticked",
-    "temperament": "Adventurous"
+    "temperament": "Adventurous",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Raffles_singapura_cat.jpg/300px-Raffles_singapura_cat.jpg"
   },
   {
     "name": "Snowshoe",
@@ -669,7 +759,8 @@
     "origin": "Crossbreed: American Shorthair and Siamese",
     "coat": "Short",
     "pattern": "Colorpoint",
-    "temperament": "Tangible"
+    "temperament": "Tangible",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Snowshoe_%28cat%29.JPG/300px-Snowshoe_%28cat%29.JPG"
   },
   {
     "name": "Sokoke",
@@ -677,7 +768,8 @@
     "origin": "Natural",
     "coat": "Short",
     "pattern": "Tabby with ticking",
-    "temperament": "Violent"
+    "temperament": "Violent",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Sokoke_dalili.jpg/300px-Sokoke_dalili.jpg"
   },
   {
     "name": "Somali",
@@ -685,7 +777,8 @@
     "origin": "Mutation",
     "coat": "Long",
     "pattern": "Ticked",
-    "temperament": "Solid"
+    "temperament": "Solid",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Blue_Somali_kitten_age_3_months.jpg/300px-Blue_Somali_kitten_age_3_months.jpg"
   },
   {
     "name": "Sphynx",
@@ -694,7 +787,8 @@
     "bodyType": "Oriental",
     "coat": "Hairless",
     "pattern": "All",
-    "temperament": "Boisterous"
+    "temperament": "Chubby",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Sphinx2_July_2006.jpg/300px-Sphinx2_July_2006.jpg"
   },
   {
     "name": "Suphalak",
@@ -702,7 +796,8 @@
     "origin": "Natural",
     "coat": "Short",
     "pattern": "Solid",
-    "temperament": "Rustic"
+    "temperament": "Rustic",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Suphalak_Female_in_Thailand_named_AumDaengManee.jpg/300px-Suphalak_Female_in_Thailand_named_AumDaengManee.jpg"
   },
   {
     "name": "Thai",
@@ -711,7 +806,8 @@
     "bodyType": "Moderate",
     "coat": "Short",
     "pattern": "Colorpoint",
-    "temperament": "Reflective"
+    "temperament": "Reflective",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Mimbi3.JPG/300px-Mimbi3.JPG"
   },
   {
     "name": "Thai Lilac",
@@ -719,7 +815,8 @@
     "origin": "Natural",
     "coat": "Short",
     "pattern": "Solid lilac",
-    "temperament": "Responsible"
+    "temperament": "Responsible",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Thai_Lilac.jpg/300px-Thai_Lilac.jpg"
   },
   {
     "name": "Tonkinese",
@@ -727,7 +824,8 @@
     "origin": "Crossbreed: Burmese and Siamese",
     "coat": "Short",
     "pattern": "Colorpoint, mink, or solid",
-    "temperament": "Common"
+    "temperament": "Abusive",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Tonkinese.gif/300px-Tonkinese.gif"
   },
   {
     "name": "Toyger",
@@ -736,7 +834,8 @@
     "bodyType": "Moderate",
     "coat": "Short",
     "pattern": "Striped",
-    "temperament": "Obsequious"
+    "temperament": "Obsequious",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Toyger_-_Cornish_Rex_presentation_show_Riihim%C3%A4ki_2008-11-16_IMG_0101.JPG/300px-Toyger_-_Cornish_Rex_presentation_show_Riihim%C3%A4ki_2008-11-16_IMG_0101.JPG"
   },
   {
     "name": "Turkish Angora",
@@ -744,7 +843,8 @@
     "origin": "Natural",
     "coat": "Semi-long",
     "pattern": "All but colorpoint",
-    "temperament": "Common"
+    "temperament": "Uttermost",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Turkse_angora.jpg/300px-Turkse_angora.jpg"
   },
   {
     "name": "Turkish Van",
@@ -752,13 +852,15 @@
     "origin": "Natural",
     "coat": "Semi-long",
     "pattern": "Van pattern",
-    "temperament": "Fantastic"
+    "temperament": "Fantastic",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Turkish_Van_Example2.jpg/300px-Turkish_Van_Example2.jpg"
   },
   {
     "name": "Ukrainian Levkoy",
     "country": "Ukraine",
     "coat": "Hairless",
-    "temperament": "Tawdry"
+    "temperament": "Tawdry",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Ukrainian_Levkoy_cat.jpg/300px-Ukrainian_Levkoy_cat.jpg"
   },
   {
     "name": "Wila Krungthep",
@@ -766,7 +868,8 @@
     "origin": "Natural",
     "coat": "Short",
     "pattern": "Solid",
-    "temperament": "Basic"
+    "temperament": "Basic",
+    "image": ""
   },
   {
     "name": "York Chocolate",
@@ -774,6 +877,7 @@
     "origin": "Natural",
     "coat": "Long",
     "pattern": "Solid brown",
-    "temperament": "Common"
+    "temperament": "Common",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/York_Chocolate.jpg/300px-York_Chocolate.jpg"
   }
 ]
