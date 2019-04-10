@@ -5,7 +5,7 @@ The Cat Breed API is live here: <https://focused-elion-17290b.netlify.com/>
 ## endpoints
 
 - GET [/breed](https://focused-elion-17290b.netlify.com/.netlify/functions/breed)
-- GET [/breed/{id}](https://focused-elion-17290b.netlify.com/.netlify/functions/breed/5caccbdd012d400dfc0bee33)
+- GET [/breed/{id}](https://focused-elion-17290b.netlify.com/.netlify/functions/breed/5cad85a5f720f54848771d87)
 - GET [/breed?search={term}](https://focused-elion-17290b.netlify.com/.netlify/functions/breed?search=longhair)
 
 ## install and start
