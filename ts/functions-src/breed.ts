@@ -11,6 +11,8 @@ const connectionString = process.env.DB_READER_CONNECTION!
 const dbName = process.env.DB_NAME!
 const collectionName = process.env.COLLECTON_NAME!
 
+const HEADERS = { "Access-Control-Allow-Origin": "*", "Access-Control-Allow-Methods":"GET" }
+
 // Make sure that .env variables are defined
 if ([connectionString, dbName, collectionName].some( envVar => !envVar)) throw new Error("environment variables not declared. Check that .env exists")
 
@@ -38,9 +40,9 @@ export const handler: Handler = (event: Event, context: Context, callback: Callb
   }
   else if (hasSearchTerm) {
     if (!isValidSearch(searchTerm!)) callback(null, { statusCode: 400, body: `Error: '${searchTerm}' includes invalid characters` })
-    else searchBreed(searchTerm!).then((results) =>  callback(null, { statusCode: 200, body: JSON.stringify(results) })).catch( err => callback( sendError(err)))
+    else searchBreed(searchTerm!).then((results) =>  callback(null, { statusCode: 200, headers:HEADERS, body: JSON.stringify(results) })).catch( err => callback( sendError(err)))
   }
-  else getAllBreeds().then((result) => callback(null, { statusCode: 200, body: JSON.stringify(result) })).catch( err => callback( sendError(err)))
+  else getAllBreeds().then((result) => callback(null, { statusCode: 200, headers:HEADERS, body: JSON.stringify(result) })).catch( err => callback( sendError(err)))
 }
 
 const getClient = ():Promise<any> => new Promise((resolve, reject) => {
