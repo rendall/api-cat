@@ -32,6 +32,6 @@
     "deploy": "git push . master:deploy && git push origin deploy:deploy"
   },
   "dependencies": {
-    "mongodb": "3.1.3"
+    "mongodb": "~3.1.13"
   }
 }
