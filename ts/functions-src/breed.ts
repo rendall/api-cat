@@ -63,7 +63,7 @@ export const searchBreed = async (term: string) => {
 
 export const getAllBreeds = async () => {
   const {client, collection} = await getClient()
-  const result = collection.find().project({ 'name': 1, 'country': 1 }).toArray()
+  const result = collection.find().project({ 'name': 1, 'country': 1, 'image':1 }).toArray()
   client.close()
   return result
 }
