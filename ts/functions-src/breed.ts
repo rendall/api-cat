@@ -8,6 +8,29 @@ const connectionString = process.env.DB_READER_CONNECTION!;
 const dbName = process.env.DB_NAME!;
 const collectionName = process.env.COLLECTON_NAME!;
 
+enum QUERY_MODE {
+  search,
+  single,
+  all
+}
+
+const extractId = (event: Event) =>
+  normalizePath(event.path)
+    .split("/")
+    .pop()!;
+
+const extractSearch = (event: Event) => event.queryStringParameters.search;
+
+const getQueryMode = (event: Event): QUERY_MODE => {
+  const searchTerm = extractSearch(event);
+  if (searchTerm !== undefined) return QUERY_MODE.search;
+
+  const id: string = extractId(event);
+  if (id !== "breed") return QUERY_MODE.single;
+
+  return QUERY_MODE.all;
+};
+
 const HEADERS = {
   "Access-Control-Allow-Origin": "*",
   "Access-Control-Allow-Methods": "GET"
@@ -16,7 +39,6 @@ const HEADERS = {
 // Make sure that .env variables are defined
 if ([connectionString, dbName, collectionName].some(envVar => !envVar))
   throw new Error("environment variables not declared. Check that .env exists");
-
 // This is the serverless function handler
 // It identifies the kind of data expected and returns its respective
 // function call
@@ -25,127 +47,74 @@ export const handler: Handler = (
   context: Context,
   callback: Callback
 ) => {
-  context.callbackWaitsForEmptyEventLoop = false; // will return data as soon as callback is called.
-
-  const searchTerm = event.queryStringParameters.search;
-  const id: string = normalizePath(event.path)
-    .split("/")
-    .pop()!; // just takes the last directory as id, unless it is 'breed', the entry point. one potential problem of this approach is that anything will work as long as the last dir on the path is a proper id
-
-  // these validate incoming data
-  // reject any input that does not validate here
-  const isBreedId = (maybe: string) => maybe.match(/^[\w\d]{24}$/); // only alphanumeric exactly 24 characters
-  const isValidSearch = (term: string) => term.match(/^[\w\s]*$/); // only letters and spaces
-
-  const hasId = id !== "breed"; // the last term in the path without an id will be the entrypoint, 'breed' in this case
-  const hasSearchTerm = searchTerm !== undefined;
-
-  if (hasId) {
-    // if the path has an id or an attempt at one then ignore query params
-    if (!isBreedId(id))
-      callback(null, {
-        statusCode: 404,
-        body: `Error: unknown or badly-formatted id '${id}'`
-      });
-    else
-      getBreed(id)
-        .then(breed =>
-          !breed
-            ? callback(null, {
-                statusCode: 404,
-                body: `Error: '${id}' not found`
-              })
-            : callback(null, {
-                statusCode: 200,
-                headers: HEADERS,
-                body: JSON.stringify(breed)
-              })
-        )
-        .catch(err => callback(sendError(err)));
-  } else if (hasSearchTerm) {
-    if (!isValidSearch(searchTerm!))
-      callback(null, {
-        statusCode: 400,
-        body: `Error: '${searchTerm}' includes invalid characters`
-      });
-    else
-      searchBreed(searchTerm!)
-        .then(results =>
-          callback(null, {
-            statusCode: 200,
-            headers: HEADERS,
-            body: JSON.stringify(results)
-          })
-        )
-        .catch(err => callback(sendError(err)));
-  } else
-    getAllBreeds()
-      .then(result =>
+  context.callbackWaitsForEmptyEventLoop = false;
+  connectToDatabase(connectionString!)
+    .then((db: Db) => db.collection(collectionName))
+    .then(
+      (collection: Collection<Breed>): Promise<Breed | Breed[] | null> => {
+        const qMode = getQueryMode(event);
+        switch (qMode) {
+          case QUERY_MODE.single:
+            return getSingleBreed(extractId(event), collection)!;
+          case QUERY_MODE.search:
+            return searchBreed(extractSearch(event)!, collection);
+          default:
+            return getAllBreeds(collection);
+        }
+      }
+    )
+    .then((result: Breed | Breed[] | null) => {
+      if (result === null)
+        callback(null, {
+          statusCode: 404,
+          headers: HEADERS,
+          body: `Error: unknown id ${extractId(event)}`
+        });
+      else
         callback(null, {
           statusCode: 200,
           headers: HEADERS,
           body: JSON.stringify(result)
-        })
-      )
-      .catch(err => callback(sendError(err)));
+        });
+    })
+    .catch(err => callback(sendError(err)));
 };
 
-let cachedClient: MongoClient | null = null;
+let cachedDb: any | null = null;
 
-const getClient = (): Promise<{
-  client: MongoClient;
-  db: Db;
-  collection: Collection<Breed>;
-}> =>
-  new Promise((resolve, reject) => {
-    const client =
-      cachedClient ||
-      new MongoClient(connectionString!, {
-        useNewUrlParser: true,
-        poolSize: 10
-      });
-
-    const resolveIt = (client: MongoClient) => {
-      const db = client.db(dbName);
-      const collection = db.collection(collectionName);
-      resolve({ client, db, collection });
-    };
-
-    // if (client.isConnected()) resolveIt(client);
-    // else
-      client
-        .connect()
-        .then(client => {
-          cachedClient = client;
-          return client;
-        })
-        .then(client => resolveIt(client))
-        .catch(reason => reject(reason));
+const connectToDatabase = (uri: string) => {
+  if (cachedDb && cachedDb.serverConfig.isConnected()) {
+    return Promise.resolve(cachedDb);
+  }
+  return MongoClient.connect(uri).then((client: MongoClient) => {
+    cachedDb = client.db(dbName);
+    return cachedDb;
   });
-
-export const searchBreed = async (term: string) => {
-  const { client, collection } = await getClient();
-  const result = collection.find({ $text: { $search: term } }).toArray();
-  // client.close();
-  return result;
 };
 
-export const getAllBreeds = async () => {
-  const { client, collection } = await getClient();
-  const result = collection
+export const searchBreed = (term: string, collection: Collection<Breed>) => {
+  const isValidSearch = (term: string) => term.match(/^[\w\s]*$/); // only letters and spaces
+
+  if (isValidSearch(term)) {
+    const result = collection.find({ $text: { $search: term } }).toArray();
+    return result;
+  } else
+    throw `invalid search term '${term}' must contain only letters and spaces`;
+};
+
+export const getAllBreeds = (collection: Collection<Breed>) =>
+  collection
     .find()
     .project({ name: 1, country: 1, image: 1 })
     .toArray();
-  // client.close();
-  return result;
-};
 
-export const getBreed = async (id: string) => {
-  const { client, collection } = await getClient();
-  const objId = new ObjectId(id);
-  const result = collection.find({ _id: objId }).next();
-  // client.close();
-  return result;
+export const getSingleBreed = (id: string, collection: Collection<Breed>) => {
+  const isValidId = (maybe: string) => maybe.match(/^[abcdef\d]{24}$/); // only alphanumeric exactly 24 characters
+  if (isValidId(id)) {
+    const objId = new ObjectId(id);
+    const result = collection.find({ _id: objId }).next();
+    return result;
+  } else throw `invalid id '${id}' which must contain 24 letters and numbers`;
 };
 
 // This just removes any trailing '/' delimiters
@@ -153,21 +122,26 @@ const normalizePath = (path: string) =>
   path.slice(-1) === "/" ? path.slice(0, path.length - 1) : path;
 
 // format the error message
-const sendError = (err: Error) => {
-  const { name, message } = err;
+const sendError = (err: Error | string, errorCode: number = 500) => {
+  const { name, message } =
+    typeof err === "string" ? { name: "Server error", message: err } : err;
   // only return 'stack' if in development mode
-  if (process.env.NODE_ENV === "development") return JSON.stringify(err);
-  else return JSON.stringify({ error: name, message });
+  const body =
+    process.env.NODE_ENV === "development"
+      ? JSON.stringify(err)
+      : JSON.stringify({ error: name, message });
+  return body;
 };
 
 interface Breed {
+  _id: string;
   name: string;
   country?: string;
   origin?: string;
   bodyType?: string;
   coat?: string;
   pattern?: string;
-  temperament: string;
+  temperament?: string;
 }
 
 interface Event {

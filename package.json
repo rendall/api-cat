@@ -9,11 +9,12 @@
     "@types/aws-lambda": "^8.10.23",
     "@types/dotenv": "^6.1.1",
     "@types/jest": "^24.0.11",
-    "@types/mongodb": "^3.1.22",
+    "@types/mongodb": "~3.1.13",
     "@types/node": "^11.13.0",
     "dotenv": "^7.0.0",
     "jest": "^24.7.1",
     "netlify-lambda": "^1.4.3",
+    "rimraf": "^2.6.3",
     "typescript": "^3.4.1"
   },
   "proxy": {
@@ -27,6 +28,7 @@
   "scripts": {
     "test": "jest",
     "insert": "node ./data/insert.js",
+    "prebuild": "rimraf ./functions-src/*.js",
     "build": "tsc && netlify-lambda build functions-src --config ./webpack.functions.js",
     "serve": "netlify-lambda serve ./functions-src --config ./webpack.functions.js",
     "deploy": "git push . master:deploy && git push origin deploy:deploy"
