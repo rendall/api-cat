@@ -4,6 +4,8 @@ Status: [![Netlify Status](https://api.netlify.com/api/v1/badges/5bf991ff-67b7-4
 
 The Cat Breed API is live here: <https://focused-elion-17290b.netlify.com/>
 
+It serves the backend for Client Cat <https://github.com/rendall/client-cat>
+
 ## endpoints
 
 - GET [/breed](https://focused-elion-17290b.netlify.com/.netlify/functions/breed)
