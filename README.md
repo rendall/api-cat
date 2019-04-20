@@ -1,6 +1,6 @@
 # CAT BREED API
 
-Status: [![Netlify Status](https://api.netlify.com/api/v1/badges/5bf991ff-67b7-4b6a-9444-a6deac7e64fb/deploy-status)](https://app.netlify.com/sites/focused-elion-17290b/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5bf991ff-67b7-4b6a-9444-a6deac7e64fb/deploy-status)](https://app.netlify.com/sites/focused-elion-17290b/deploys) [![Maintainability](https://api.codeclimate.com/v1/badges/4362c2af67b51f449960/maintainability)](https://codeclimate.com/github/rendall/api-cat/maintainability)
 
 The Cat Breed API is live here: <https://focused-elion-17290b.netlify.com/>
 
